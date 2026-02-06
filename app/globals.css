@@ -6,6 +6,14 @@ html {
   scroll-behavior: smooth;
 }
 
+:root {
+  color-scheme: light;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
 body {
   font-family:
     "Atkinson Hyperlegible Next",
@@ -13,12 +21,55 @@ body {
     "Avenir Next",
     "Segoe UI",
     sans-serif;
+  transition: background-color 180ms ease, color 180ms ease;
 }
 
 .dot-bg {
   background-image: radial-gradient(rgba(0, 0, 0, 0.12) 1px, transparent 1px);
   background-size: 28px 28px;
   background-position: -8px -8px;
+}
+
+html.dark body {
+  background-color: #0f141b;
+  color: #e6ebf0;
+}
+
+html.dark .dot-bg {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.14) 1px, transparent 1px);
+}
+
+html.dark .bg-white,
+html.dark .bg-white\/95,
+html.dark .bg-\[\#faf9f6\],
+html.dark .bg-\[\#f8f8f6\],
+html.dark .bg-\[\#f7f7f7\],
+html.dark .bg-\[\#f3f3f3\],
+html.dark .bg-\[\#f0efe9\] {
+  background-color: #161d27 !important;
+}
+
+html.dark .text-\[\#151515\],
+html.dark .text-\[\#121212\],
+html.dark .text-\[\#2f2f2f\],
+html.dark .text-\[\#3f3f3f\],
+html.dark .text-\[\#4b4b4b\],
+html.dark .text-\[\#4c4c4c\],
+html.dark .text-\[\#5a5a5a\] {
+  color: #e6ebf0 !important;
+}
+
+html.dark .border-\[\#d7d7d7\],
+html.dark .border-\[\#d8d8d8\],
+html.dark .border-\[\#d9d7ce\],
+html.dark .border-\[\#d9d9d9\],
+html.dark .border-\[\#dbdbdb\],
+html.dark .border-\[\#dddddd\],
+html.dark .border-\[\#e1e1e1\],
+html.dark .border-\[\#e2e0d8\],
+html.dark .border-\[\#c8c5ba\],
+html.dark .border-\[\#d2d2d2\] {
+  border-color: #313a46 !important;
 }
 
 @layer components {
@@ -38,6 +89,16 @@ body {
     @apply bg-[#f0efe9];
   }
 
+  html.dark .pill-button {
+    background-color: #161d27;
+    border-color: #313a46;
+    color: #e6ebf0;
+  }
+
+  html.dark .pill-button:hover {
+    background-color: #1d2530;
+  }
+
   .primary-button {
     @apply inline-flex items-center justify-center rounded-full border border-[#111] bg-[#111] px-4 py-2 text-sm font-semibold text-white transition-opacity;
   }
@@ -46,12 +107,32 @@ body {
     @apply opacity-90;
   }
 
+  html.dark .primary-button {
+    background-color: #e6ebf0;
+    border-color: #e6ebf0;
+    color: #10151d;
+  }
+
+  html.dark .primary-button:hover {
+    opacity: 0.92;
+  }
+
   .form-label {
     @apply mb-1 block text-xs font-semibold uppercase tracking-[0.06em] text-[#5a5a5a];
   }
 
   .form-input {
     @apply w-full rounded-xl border border-[#d9d7ce] bg-[#faf9f6] px-3 py-2 text-sm text-[#151515] outline-none transition-colors focus:border-[#151515];
+  }
+
+  html.dark .form-input {
+    background-color: #161d27;
+    border-color: #313a46;
+    color: #e6ebf0;
+  }
+
+  html.dark .form-input:focus {
+    border-color: #e6ebf0;
   }
 }
 

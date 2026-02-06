@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import SiteNav from "@/components/site-nav";
 import LiveClock from "@/components/live-clock";
 import "./globals.css";
@@ -34,25 +33,7 @@ export default function RootLayout({ children }) {
               <LiveClock timeZone={TIMEZONE_NAME} />
             </div>
             <div className="mt-5 flex items-center justify-center">
-              <Link
-                href="/"
-                aria-label="Rads Dev Home"
-                className="overflow-hidden rounded-xl border border-[#d7d7d7] bg-[#2a2b2f] p-1 shadow-[0_8px_16px_rgba(0,0,0,0.08)]"
-              >
-                <Image
-                  src="/radsdev-logo.png"
-                  alt="Rads Dev"
-                  width={2362}
-                  height={2362}
-                  className="h-11 w-[170px] object-cover object-bottom"
-                  priority
-                />
-              </Link>
-            </div>
-            <div className="mt-4 flex items-center justify-center">
-              <div className="rounded-full border border-[#d7d7d7] bg-white/95 px-2 py-1 shadow-[0_8px_16px_rgba(0,0,0,0.06)] backdrop-blur">
-                <SiteNav />
-              </div>
+              <SiteNav />
             </div>
           </header>
 
