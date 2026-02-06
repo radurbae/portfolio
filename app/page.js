@@ -19,9 +19,8 @@ export default function HomePage() {
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-80" />
             <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-emerald-500" />
           </span>
-          <span className="font-semibold text-emerald-600">Online</span>
-          <span>•</span>
-          {PROFILE.handle} • {PROFILE.title}
+          <span className="font-bold text-[#151515]">{PROFILE.handle}</span>
+          <span className="font-normal text-[#4c4c4c] opacity-80">{PROFILE.title}</span>
         </div>
 
         <h1 className="mx-auto mt-6 max-w-[960px] text-balance text-[clamp(2.4rem,8vw,6rem)] font-semibold leading-[0.95] tracking-[-0.03em]">
