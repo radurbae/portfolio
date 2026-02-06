@@ -14,12 +14,7 @@ export const metadata = {
     default: "Rads Dev",
     template: "%s | Rads Dev"
   },
-  description: "Brand, web, software, and mobile portfolio.",
-  icons: {
-    icon: "/radsdev-logo.png",
-    shortcut: "/radsdev-logo.png",
-    apple: "/radsdev-logo.png"
-  }
+  description: "Brand, web, software, and mobile portfolio."
 };
 
 export default function RootLayout({ children }) {

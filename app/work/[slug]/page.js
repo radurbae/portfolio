@@ -2,8 +2,6 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { CASE_STUDIES, getCaseStudyBySlug } from "@/lib/portfolio-data";
 
-export const revalidate = 1800;
-
 export function generateStaticParams() {
   return CASE_STUDIES.map((study) => ({ slug: study.slug }));
 }
