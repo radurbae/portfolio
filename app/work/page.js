@@ -8,20 +8,20 @@ export const metadata = {
 export default function WorkPage() {
   return (
     <section className="px-6 py-8 md:px-10 md:py-12">
-      <p className="inline-flex rounded-full border border-[#c8c5ba] bg-white px-3 py-1 text-xs font-semibold">
+      <p data-reveal className="motion-reveal inline-flex rounded-full border border-[#c8c5ba] bg-white px-3 py-1 text-xs font-semibold">
         All Case Studies
       </p>
-      <h1 className="mt-4 max-w-[760px] text-4xl font-semibold leading-tight md:text-6xl">
+      <h1 data-reveal style={{ "--reveal-delay": "80ms" }} className="motion-reveal mt-4 max-w-[760px] text-4xl font-semibold leading-tight md:text-6xl">
         Portfolio projects across brand, web, software, and mobile.
       </h1>
-      <p className="mt-3 max-w-[760px] text-sm text-[#4c4c4c] md:text-base">
+      <p data-reveal style={{ "--reveal-delay": "130ms" }} className="motion-reveal mt-3 max-w-[760px] text-sm text-[#4c4c4c] md:text-base">
         Each case study explains challenge, approach, deliverables, and measurable outcomes from
         multidisciplinary execution.
       </p>
 
-      <div className="mt-7 grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
+      <div data-reveal style={{ "--reveal-delay": "170ms" }} className="motion-reveal mt-7 grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
         {CASE_STUDIES.map((study) => (
-          <article key={study.slug} className="flex h-full flex-col rounded-2xl border border-[#d9d7ce] bg-white p-4">
+          <article key={study.slug} className="motion-card flex h-full flex-col rounded-2xl border border-[#d9d7ce] bg-white p-4">
             <div className="flex flex-wrap items-center gap-2">
               <span className="rounded-full border border-[#c8c5ba] bg-[#f8f8f6] px-3 py-1 text-xs">
                 {study.category}
@@ -43,7 +43,7 @@ export default function WorkPage() {
             </div>
 
             <div className="mt-5 flex flex-wrap items-center gap-2">
-              <Link href={`/work/${encodeURIComponent(study.slug)}`} className="primary-button">
+              <Link href={`/work/${encodeURIComponent(study.slug)}`} className="primary-button motion-press">
                 Open Case
               </Link>
               <span className="pill-button px-3 py-2 text-sm">{study.timeline}</span>

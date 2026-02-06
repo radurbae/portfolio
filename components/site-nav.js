@@ -52,7 +52,7 @@ export default function SiteNav() {
               key={link.href}
               href={link.href}
               aria-label={link.label}
-              className={`inline-flex items-center rounded-full border text-sm transition-colors ${
+              className={`motion-press inline-flex items-center rounded-full border text-sm transition-colors ${
                 link.iconOnly ? "h-9 w-9 justify-center px-0" : "gap-2 px-3 py-1.5"
               } ${
                 active
@@ -72,7 +72,7 @@ export default function SiteNav() {
         aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
         aria-pressed={theme === "dark"}
         onClick={handleThemeToggle}
-        className="inline-flex h-9 w-9 items-center justify-center rounded-full text-[#2f2f2f] transition-colors hover:bg-[#f3f3f3]"
+        className="motion-press inline-flex h-9 w-9 items-center justify-center rounded-full text-[#2f2f2f] transition-colors hover:bg-[#f3f3f3]"
       >
         {mounted && theme === "dark" ? <MoonIcon /> : <SunIcon />}
       </button>

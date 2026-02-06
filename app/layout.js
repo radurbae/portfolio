@@ -1,7 +1,15 @@
 import Link from "next/link";
+import { Figtree } from "next/font/google";
 import SiteNav from "@/components/site-nav";
 import LiveClock from "@/components/live-clock";
+import ScrollReveal from "@/components/scroll-reveal";
 import "./globals.css";
+
+const figtree = Figtree({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-figtree"
+});
 
 const TIMEZONE_LABEL = process.env.PORTFOLIO_TIMEZONE_LABEL || "Asia/Jakarta";
 const TIMEZONE_NAME = process.env.PORTFOLIO_TIMEZONE_NAME || "Asia/Jakarta";
@@ -20,23 +28,23 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="bg-white text-[#151515] antialiased">
+      <body className={`${figtree.variable} bg-white text-[#151515] antialiased`}>
         <div className="dot-bg min-h-screen">
-          <header className="mx-auto w-full max-w-[1240px] px-4 pt-6 md:px-8 md:pt-8">
-            <div className="flex items-center justify-between text-sm text-[#4b4b4b]">
+          <header className="mx-auto w-full max-w-[1360px] px-4 pt-6 md:px-8 md:pt-8">
+            <div data-reveal className="motion-reveal flex items-center justify-between text-sm text-[#4b4b4b]">
               <span>{TIMEZONE_LABEL}</span>
               <LiveClock timeZone={TIMEZONE_NAME} />
             </div>
-            <div className="mt-5 flex items-center justify-center">
+            <div data-reveal style={{ "--reveal-delay": "80ms" }} className="motion-reveal mt-5 flex items-center justify-center">
               <SiteNav />
             </div>
           </header>
 
-          <main className="mx-auto w-full max-w-[1240px] px-4 pb-16 pt-10 md:px-8 md:pt-14">
+          <main className="mx-auto w-full max-w-[1360px] px-4 pb-16 pt-10 md:px-8 md:pt-14">
             {children}
           </main>
 
-          <footer className="mx-auto mt-6 flex w-full max-w-[1240px] flex-col items-start justify-between gap-3 border-t border-[#dbdbdb] px-4 py-6 text-xs text-[#4c4c4c] sm:flex-row sm:items-center md:px-8">
+          <footer data-reveal className="motion-reveal mx-auto mt-6 flex w-full max-w-[1360px] flex-col items-start justify-between gap-3 border-t border-[#dbdbdb] px-4 py-6 text-xs text-[#4c4c4c] sm:flex-row sm:items-center md:px-8">
             <p>© {new Date().getFullYear()} Raditya Adyatma. All rights reserved.</p>
             <div className="flex flex-wrap items-center gap-3">
               <Link href="/about" className="transition-colors hover:text-[#151515]">
@@ -60,6 +68,7 @@ export default function RootLayout({ children }) {
             </div>
           </footer>
         </div>
+        <ScrollReveal />
       </body>
     </html>
   );

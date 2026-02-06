@@ -145,10 +145,10 @@ export default function InquiryForm({ contactEmail }) {
       </div>
 
       <div className="flex flex-wrap items-center gap-2">
-        <button type="submit" className="primary-button">
+        <button type="submit" className="primary-button motion-press">
           Send Inquiry
         </button>
-        <button type="button" className="pill-button" onClick={() => setValues(DEFAULT_VALUES)}>
+        <button type="button" className="pill-button motion-press" onClick={() => setValues(DEFAULT_VALUES)}>
           Reset
         </button>
       </div>
