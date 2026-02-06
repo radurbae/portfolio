@@ -15,7 +15,12 @@ export default function HomePage() {
     <>
       <section className="py-10 text-center md:py-16">
         <div className="mx-auto flex w-fit items-center gap-2 rounded-full border border-[#d9d9d9] bg-white px-3 py-1 text-xs text-[#4c4c4c]">
-          <span className="h-2.5 w-2.5 rounded-full bg-emerald-500" />
+          <span className="relative flex h-2.5 w-2.5">
+            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-80" />
+            <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-emerald-500" />
+          </span>
+          <span className="font-semibold text-emerald-600">Online</span>
+          <span>•</span>
           {PROFILE.handle} • {PROFILE.title}
         </div>
 
