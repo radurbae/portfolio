@@ -1,0 +1,26 @@
+RADITYA ADYATMA
+Product Designer and Full Stack Developer
+Email: radurbae@gmail.com
+
+SUMMARY
+Multidisciplinary builder focused on brand-led digital products.
+I design and ship websites, software dashboards, and mobile experiences
+with measurable impact and clear implementation quality.
+
+CORE SKILLS
+- Product Strategy and UX/UI
+- Brand Systems and Visual Direction
+- Next.js / React Frontend Development
+- API Integration and Backend Collaboration
+- Mobile Product Delivery
+
+SELECTED PROJECTS
+- Portfolio (Next.js + Tailwind)
+- Datasantrig5
+- X-Barn
+- TIL Rads
+- Redemption
+
+CONTACT
+Email: radurbae@gmail.com
+GitHub: https://github.com/radurbae
