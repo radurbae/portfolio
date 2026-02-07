@@ -1,7 +1,7 @@
 export const PROFILE = {
   name: "Raditya Adyatma",
   handle: "RADS",
-  title: "Brand Designer and Fullstack Developer",
+  title: "Available for hire",
   heroHeadline: "Building digital products where brand and product ship as one system",
   heroDescription:
     "I help founders and teams launch clear brand-led experiences across web, software, and mobile. From positioning and UI to production code, everything stays coherent from first click to release.",

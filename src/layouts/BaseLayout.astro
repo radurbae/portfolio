@@ -1,0 +1,65 @@
+---
+import SiteNav from "@/components/SiteNav.astro";
+import "@/styles/global.css";
+import siteScriptUrl from "@/scripts/site.js?url";
+import { BASE_URL, normalizePath, toPage } from "@/utils/paths";
+
+const {
+  title,
+  description = "Brand, web, software, and mobile portfolio."
+} = Astro.props;
+
+const TIMEZONE_LABEL = import.meta.env.PORTFOLIO_TIMEZONE_LABEL || "Asia/Jakarta";
+const TIMEZONE_NAME = import.meta.env.PORTFOLIO_TIMEZONE_NAME || "Asia/Jakarta";
+const LINKEDIN_URL = import.meta.env.PORTFOLIO_LINKEDIN || "https://linkedin.com";
+const DRIBBBLE_URL = import.meta.env.PORTFOLIO_DRIBBBLE || "https://dribbble.com";
+const INSTAGRAM_URL = import.meta.env.PORTFOLIO_INSTAGRAM || "https://instagram.com";
+
+const currentPath = normalizePath(Astro.url.pathname, BASE_URL);
+const pageTitle = title ? `${title} | Rads Dev` : "Rads Dev";
+const faviconHref = `${BASE_URL}favicon.png`;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <title>{pageTitle}</title>
+    <link rel="icon" type="image/png" href={faviconHref} />
+  </head>
+  <body data-base-url={BASE_URL} class="bg-white text-[#151515] antialiased">
+    <div class="dot-bg min-h-screen">
+      <header class="mx-auto w-full max-w-[1360px] px-4 pt-6 md:px-8 md:pt-8">
+        <div data-reveal class="motion-reveal flex items-center justify-between text-sm text-[#4b4b4b]">
+          <span>{TIMEZONE_LABEL}</span>
+          <span data-live-clock data-time-zone={TIMEZONE_NAME}></span>
+        </div>
+        <div data-floating-nav-shell class="mt-5 flex h-[52px] items-start justify-center">
+          <div data-floating-nav class="floating-nav">
+            <SiteNav currentPath={currentPath} />
+          </div>
+        </div>
+      </header>
+
+      <main class="mx-auto w-full max-w-[1360px] px-4 pb-16 pt-10 md:px-8 md:pt-14">
+        <slot />
+      </main>
+
+      <footer data-reveal class="motion-reveal mx-auto mt-6 flex w-full max-w-[1360px] flex-col items-start justify-between gap-3 border-t border-[#dbdbdb] px-4 py-6 text-xs text-[#4c4c4c] sm:flex-row sm:items-center md:px-8">
+        <p data-i18n="footer.rights" data-i18n-year={new Date().getFullYear()}>© {new Date().getFullYear()} Raditya Adyatma. All rights reserved.</p>
+        <div class="flex flex-wrap items-center gap-3">
+          <a href={toPage("/about")} data-i18n="footer.about" class="transition-colors hover:text-[#151515]">About</a>
+          <a href={toPage("/work")} data-i18n="footer.work" class="transition-colors hover:text-[#151515]">Work</a>
+          <a href={toPage("/contact")} data-i18n="footer.contact" class="transition-colors hover:text-[#151515]">Contact</a>
+          <a href={LINKEDIN_URL} target="_blank" rel="noreferrer" data-i18n="footer.linkedin" class="transition-colors hover:text-[#151515]">LinkedIn</a>
+          <a href={DRIBBBLE_URL} target="_blank" rel="noreferrer" data-i18n="footer.dribbble" class="transition-colors hover:text-[#151515]">Dribbble</a>
+          <a href={INSTAGRAM_URL} target="_blank" rel="noreferrer" data-i18n="footer.instagram" class="transition-colors hover:text-[#151515]">Instagram</a>
+        </div>
+      </footer>
+    </div>
+
+    <script type="module" src={siteScriptUrl}></script>
+  </body>
+</html>

@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Figtree";
+  src: url("../assets/fonts/Figtree-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: url("../assets/fonts/Figtree-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -19,7 +35,7 @@ html.dark {
 
 body {
   font-family:
-    var(--font-figtree),
+    "Figtree",
     "Avenir Next",
     "Segoe UI",
     sans-serif;
@@ -115,6 +131,25 @@ html.dark .border-\[\#d2d2d2\] {
 }
 
 @layer components {
+  .floating-nav {
+    transition:
+      box-shadow 260ms ease,
+      opacity 220ms ease;
+  }
+
+  .floating-nav.is-floating {
+    position: fixed;
+    top: 0.95rem;
+    left: 50%;
+    transform: translate3d(-50%, 0, 0);
+    z-index: 70;
+    filter: drop-shadow(0 14px 28px rgba(10, 18, 30, 0.12));
+  }
+
+  html.dark .floating-nav.is-floating {
+    filter: drop-shadow(0 16px 30px rgba(0, 0, 0, 0.36));
+  }
+
   .motion-reveal,
   .reveal-item {
     opacity: 0;
@@ -221,14 +256,141 @@ html.dark .border-\[\#d2d2d2\] {
 
   .hero-char-highlight {
     font-weight: 800;
-    text-decoration-line: underline;
-    text-underline-offset: 0.1em;
-    text-decoration-thickness: 0.11em;
-    text-decoration-skip-ink: none;
   }
 
   .hero-space {
     width: 0.28em;
+  }
+
+  .language-picker-trigger {
+    @apply inline-flex h-9 min-w-[3.6rem] items-center justify-between gap-1 rounded-full border border-transparent px-2.5 text-[11px] font-semibold tracking-[0.04em] text-[#2f2f2f] transition-colors;
+    text-transform: uppercase;
+  }
+
+  .language-picker-trigger:hover {
+    @apply bg-[#f3f3f3] text-[#151515];
+  }
+
+  .language-picker-trigger:focus-visible {
+    outline: none;
+    border-color: #d8d8d8;
+    background-color: #f7f7f7;
+    color: #151515;
+  }
+
+  .language-menu {
+    position: absolute;
+    top: calc(100% + 0.45rem);
+    left: 50%;
+    width: 5.6rem;
+    transform: translateX(-50%) translateY(-4px);
+    border: 1px solid #d8d8d8;
+    border-radius: 0.8rem;
+    background-color: #ffffff;
+    box-shadow: 0 12px 24px rgba(12, 16, 24, 0.16);
+    z-index: 220;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 180ms ease, transform 180ms ease;
+    overflow: visible;
+    padding: 0.22rem;
+  }
+
+  .language-menu.is-open {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+    pointer-events: auto;
+  }
+
+  .language-menu-item {
+    @apply flex w-full items-center justify-between rounded-lg border border-transparent px-2 py-2 text-left text-[11px] font-semibold tracking-[0.05em] transition-colors;
+    text-transform: uppercase;
+    color: #2f2f2f;
+  }
+
+  .language-menu-item:hover {
+    @apply bg-[#f3f3f3];
+  }
+
+  .language-menu-item.is-active {
+    border-color: #d8d8d8;
+    background-color: #f7f7f7;
+    color: #121212;
+  }
+
+  .language-code {
+    line-height: 1;
+  }
+
+  .language-check {
+    margin-left: 0.35rem;
+    color: #151515;
+    opacity: 0;
+    transform: scale(0.88);
+    transition: opacity 150ms ease, transform 150ms ease;
+  }
+
+  .language-menu-item.is-active .language-check {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  html.dark .language-picker-trigger {
+    color: #e6ebf0;
+  }
+
+  html.dark .language-picker-trigger:hover {
+    background-color: #1d2530;
+    color: #f3f6fa;
+  }
+
+  html.dark .language-picker-trigger:focus-visible {
+    border-color: #313a46;
+    background-color: #1d2530;
+    color: #f3f6fa;
+  }
+
+  html.dark .language-menu {
+    border-color: #313a46;
+    background-color: #161d27;
+    box-shadow: 0 16px 30px rgba(0, 0, 0, 0.46);
+  }
+
+  html.dark .language-menu-item:hover {
+    background-color: #1d2530;
+  }
+
+  html.dark .language-menu-item.is-active {
+    border-color: #313a46;
+    background-color: #1f2937;
+    color: #f3f6fa;
+  }
+
+  html.dark .language-code {
+    color: inherit;
+  }
+
+  html.dark .language-check {
+    color: #f3f6fa;
+  }
+
+  html[dir="rtl"] .language-menu {
+    transform: translateX(50%) translateY(-4px);
+    left: auto;
+    right: 50%;
+  }
+
+  html[dir="rtl"] .language-menu.is-open {
+    transform: translateX(50%) translateY(0);
+  }
+
+  html[dir="rtl"] .language-menu-item {
+    text-align: right;
+  }
+
+  html[dir="rtl"] .language-check {
+    margin-left: 0.35rem;
+    margin-right: 0;
   }
 
   .pill-button {
@@ -287,6 +449,10 @@ html.dark .border-\[\#d2d2d2\] {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .floating-nav {
+    transition: none;
+  }
+
   .motion-reveal,
   .reveal-item {
     opacity: 1;

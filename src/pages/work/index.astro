@@ -1,0 +1,52 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { CASE_STUDIES } from "@/data/portfolio-data";
+import { toPage } from "@/utils/paths";
+---
+
+<BaseLayout title="Work">
+  <section class="px-6 py-8 md:px-10 md:py-12">
+    <p data-reveal data-i18n="work.badge" class="motion-reveal inline-flex rounded-full border border-[#c8c5ba] bg-white px-3 py-1 text-xs font-semibold">
+      All Case Studies
+    </p>
+    <h1 data-reveal data-i18n="work.headline" style="--reveal-delay:80ms" class="motion-reveal mt-4 max-w-[760px] text-4xl font-semibold leading-tight md:text-6xl">
+      Portfolio projects across brand, web, software, and mobile.
+    </h1>
+    <p data-reveal data-i18n="work.description" style="--reveal-delay:130ms" class="motion-reveal mt-3 max-w-[760px] text-sm text-[#4c4c4c] md:text-base">
+      Each case study explains challenge, approach, deliverables, and measurable outcomes from
+      multidisciplinary execution.
+    </p>
+
+    <div data-reveal style="--reveal-delay:170ms" class="motion-reveal mt-7 grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
+      {
+        CASE_STUDIES.map((study) => (
+          <article class="motion-card flex h-full flex-col rounded-2xl border border-[#d9d7ce] bg-white p-4">
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="rounded-full border border-[#c8c5ba] bg-[#f8f8f6] px-3 py-1 text-xs">{study.category}</span>
+              <span class="rounded-full border border-[#c8c5ba] bg-[#f8f8f6] px-3 py-1 text-xs">{study.year}</span>
+            </div>
+
+            <h2 class="mt-3 text-2xl font-semibold leading-tight">{study.title}</h2>
+            <p class="mt-2 text-sm text-[#4c4c4c]">{study.summary}</p>
+
+            <div class="mt-4 flex flex-wrap gap-2">
+              {
+                study.outcomes.slice(0, 2).map((outcome) => (
+                  <span class="rounded-full border border-[#c8c5ba] bg-white px-3 py-1 text-xs">
+                    {outcome.label}: {outcome.value}
+                  </span>
+                ))
+              }
+            </div>
+
+            <div class="mt-5 flex flex-wrap items-center gap-2">
+              <a href={toPage(`/work/${study.slug}`)} data-i18n="work.openCase" class="primary-button motion-press">Open Case</a>
+              <span class="pill-button px-3 py-2 text-sm">{study.timeline}</span>
+              <span class="pill-button px-3 py-2 text-sm">{study.industry}</span>
+            </div>
+          </article>
+        ))
+      }
+    </div>
+  </section>
+</BaseLayout>

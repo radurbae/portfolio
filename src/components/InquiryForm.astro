@@ -1,0 +1,50 @@
+---
+const { contactEmail = "radurbae@gmail.com" } = Astro.props;
+---
+
+<form id="inquiry-form" data-contact-email={contactEmail} class="space-y-3">
+  <div class="grid grid-cols-1 gap-3 md:grid-cols-2">
+    <div>
+      <label for="name" data-i18n="contact.form.name" class="form-label">Name</label>
+      <input id="name" name="name" type="text" data-i18n-placeholder="contact.form.placeholderName" class="form-input" placeholder="Your name" required />
+    </div>
+    <div>
+      <label for="email" data-i18n="contact.form.email" class="form-label">Email</label>
+      <input id="email" name="email" type="email" data-i18n-placeholder="contact.form.placeholderEmail" class="form-input" placeholder="you@email.com" required />
+    </div>
+  </div>
+
+  <div class="grid grid-cols-1 gap-3 md:grid-cols-3">
+    <div>
+      <label for="projectType" data-i18n="contact.form.projectType" class="form-label">Project Type</label>
+      <input id="projectType" name="projectType" type="text" data-i18n-placeholder="contact.form.placeholderProjectType" class="form-input" placeholder="Website / App / Software" />
+    </div>
+    <div>
+      <label for="budget" data-i18n="contact.form.budget" class="form-label">Budget</label>
+      <input id="budget" name="budget" type="text" data-i18n-placeholder="contact.form.placeholderBudget" class="form-input" placeholder="$3k - $10k" />
+    </div>
+    <div>
+      <label for="timeline" data-i18n="contact.form.timeline" class="form-label">Timeline</label>
+      <input id="timeline" name="timeline" type="text" data-i18n-placeholder="contact.form.placeholderTimeline" class="form-input" placeholder="4 - 8 weeks" />
+    </div>
+  </div>
+
+  <div>
+    <label for="message" data-i18n="contact.form.projectBrief" class="form-label">Project Brief</label>
+    <textarea
+      id="message"
+      name="message"
+      class="form-input min-h-[130px]"
+      data-i18n-placeholder="contact.form.placeholderBrief"
+      placeholder="What are you trying to build, for who, and what outcome matters most?"
+      required
+    ></textarea>
+  </div>
+
+  <div class="flex flex-wrap items-center gap-2">
+    <button type="submit" data-i18n="contact.form.send" class="primary-button motion-press">Send Inquiry</button>
+    <button type="button" data-i18n="contact.form.reset" class="pill-button motion-press" data-reset-inquiry>Reset</button>
+  </div>
+
+  <p data-inquiry-status class="text-xs text-[#4c4c4c]"></p>
+</form>
