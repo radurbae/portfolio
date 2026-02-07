@@ -18,7 +18,7 @@ function isLinkActive(pathname, href) {
 }
 ---
 
-<nav class="relative z-[120] flex items-center overflow-visible rounded-full border border-[#d7d7d7] bg-white/95 px-1.5 py-1 shadow-[0_8px_16px_rgba(0,0,0,0.06)] backdrop-blur">
+<nav class="relative z-[120] flex w-full max-w-[min(100%,680px)] items-center justify-between overflow-visible rounded-full border border-[#d7d7d7] bg-white/95 px-1 py-1 shadow-[0_8px_16px_rgba(0,0,0,0.06)] backdrop-blur sm:max-w-none sm:justify-start sm:px-1.5">
   <div class="flex items-center gap-1">
     {
       LINKS.map((link) => {
@@ -31,7 +31,7 @@ function isLinkActive(pathname, href) {
             aria-label={link.label}
             data-i18n-aria-label={link.key}
             class={`inline-flex items-center rounded-full border text-sm transition-colors ${
-              link.iconOnly ? "h-9 w-9 justify-center px-0" : "gap-2 px-3 py-1.5"
+              link.iconOnly ? "h-8 w-8 justify-center px-0 sm:h-9 sm:w-9" : "h-8 justify-center px-2 sm:gap-2 sm:px-3 sm:py-1.5"
             } ${
               active
                 ? "border-[#d8d8d8] bg-[#f7f7f7] text-[#121212]"
@@ -74,13 +74,13 @@ function isLinkActive(pathname, href) {
                 <circle cx="9" cy="7.6" r="1.2" fill="currentColor"></circle>
               </svg>
             )}
-            {!link.iconOnly && <span data-i18n={link.key}>{link.label}</span>}
+            {!link.iconOnly && <span data-i18n={link.key} class="hidden sm:inline">{link.label}</span>}
           </a>
         );
       })
     }
   </div>
-  <span class="mx-1 h-6 w-px bg-[#e1e1e1]"></span>
+  <span class="mx-1 h-5 w-px bg-[#e1e1e1] sm:h-6"></span>
   <div class="relative inline-flex items-center" data-language-picker>
     <span class="sr-only" data-i18n="nav.language">Language</span>
     <button
@@ -118,13 +118,13 @@ function isLinkActive(pathname, href) {
       </button>
     </div>
   </div>
-  <span class="mx-1 h-6 w-px bg-[#e1e1e1]"></span>
+  <span class="mx-1 h-5 w-px bg-[#e1e1e1] sm:h-6"></span>
   <button
     type="button"
     data-theme-toggle
     aria-label="Switch to dark mode"
     aria-pressed="false"
-    class="inline-flex h-9 w-9 items-center justify-center rounded-full text-[#2f2f2f] transition-colors hover:bg-[#f3f3f3]"
+    class="inline-flex h-8 w-8 items-center justify-center rounded-full text-[#2f2f2f] transition-colors hover:bg-[#f3f3f3] sm:h-9 sm:w-9"
   >
     <svg data-theme-icon="sun" viewBox="0 0 24 24" aria-hidden="true" class="h-4 w-4">
       <circle cx="12" cy="12" r="3.6" fill="none" stroke="currentColor" stroke-width="1.7"></circle>

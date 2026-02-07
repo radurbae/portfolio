@@ -135,6 +135,8 @@ html.dark .border-\[\#d2d2d2\] {
     transition:
       box-shadow 260ms ease,
       opacity 220ms ease;
+    width: 100%;
+    max-width: min(100vw - 1.25rem, 680px);
   }
 
   .floating-nav.is-floating {
@@ -144,6 +146,13 @@ html.dark .border-\[\#d2d2d2\] {
     transform: translate3d(-50%, 0, 0);
     z-index: 70;
     filter: drop-shadow(0 14px 28px rgba(10, 18, 30, 0.12));
+  }
+
+  @media (min-width: 640px) {
+    .floating-nav {
+      width: auto;
+      max-width: none;
+    }
   }
 
   html.dark .floating-nav.is-floating {
@@ -279,7 +288,7 @@ html.dark .border-\[\#d2d2d2\] {
   }
 
   .language-picker-trigger {
-    @apply inline-flex h-9 min-w-[3.6rem] items-center justify-between gap-1 rounded-full border border-transparent px-2.5 text-[11px] font-semibold tracking-[0.04em] text-[#2f2f2f] transition-colors;
+    @apply inline-flex h-8 min-w-[3.25rem] items-center justify-between gap-1 rounded-full border border-transparent px-2 text-[10px] font-semibold tracking-[0.04em] text-[#2f2f2f] transition-colors sm:h-9 sm:min-w-[3.6rem] sm:px-2.5 sm:text-[11px];
     text-transform: uppercase;
   }
 
@@ -298,7 +307,7 @@ html.dark .border-\[\#d2d2d2\] {
     position: absolute;
     top: calc(100% + 0.45rem);
     left: 50%;
-    width: 5.6rem;
+    width: 5.1rem;
     transform: translateX(-50%) translateY(-4px);
     border: 1px solid #d8d8d8;
     border-radius: 0.8rem;
@@ -312,6 +321,12 @@ html.dark .border-\[\#d2d2d2\] {
     padding: 0.22rem;
   }
 
+  @media (min-width: 640px) {
+    .language-menu {
+      width: 5.6rem;
+    }
+  }
+
   .language-menu.is-open {
     opacity: 1;
     transform: translateX(-50%) translateY(0);
@@ -319,7 +334,7 @@ html.dark .border-\[\#d2d2d2\] {
   }
 
   .language-menu-item {
-    @apply flex w-full items-center justify-between rounded-lg border border-transparent px-2 py-2 text-left text-[11px] font-semibold tracking-[0.05em] transition-colors;
+    @apply flex w-full items-center justify-between rounded-lg border border-transparent px-1.5 py-1.5 text-left text-[10px] font-semibold tracking-[0.05em] transition-colors sm:px-2 sm:py-2 sm:text-[11px];
     text-transform: uppercase;
     color: #2f2f2f;
   }
