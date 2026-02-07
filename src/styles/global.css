@@ -262,6 +262,15 @@ html.dark .border-\[\#d2d2d2\] {
     width: 0.28em;
   }
 
+  .hero-word-token {
+    unicode-bidi: isolate;
+  }
+
+  .hero-space-inline {
+    display: inline-block;
+    width: 0.32em;
+  }
+
   .language-picker-trigger {
     @apply inline-flex h-9 min-w-[3.6rem] items-center justify-between gap-1 rounded-full border border-transparent px-2.5 text-[11px] font-semibold tracking-[0.04em] text-[#2f2f2f] transition-colors;
     text-transform: uppercase;

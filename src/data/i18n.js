@@ -26,7 +26,7 @@ export const TRANSLATIONS = {
       instagram: "Instagram"
     },
     home: {
-      profileTitle: "Brand Designer and Fullstack Developer",
+      profileTitle: "Available For Hire",
       heroHeadline: "YOUR DIGITAL DEVELOPMENT PARTNER",
       heroHighlight: "Digital Development",
       heroDescription:

@@ -106,8 +106,35 @@ function getHighlightCharacterIndexes(text, phrase) {
   return highlighted;
 }
 
-function buildHeroMarkup(text, baseDelay, staggerDelay, highlightedIndexes = new Set()) {
-  const words = text.split(" ");
+function buildHeroMarkup(text, baseDelay, staggerDelay, highlightedIndexes = new Set(), options = {}) {
+  const { wordMode = false, highlightPhrase = "" } = options;
+  const words = text.split(" ").filter(Boolean);
+
+  if (wordMode) {
+    const highlightWords = new Set(
+      highlightPhrase
+        .toLowerCase()
+        .split(" ")
+        .map((word) => word.trim())
+        .filter(Boolean)
+    );
+
+    const wordStagger = Math.max(staggerDelay * 7, 76);
+
+    return words
+      .map((word, wordIndex) => {
+        const normalizedWord = word.toLowerCase().trim();
+        const delay = baseDelay + wordIndex * wordStagger;
+        const tokenClass = highlightWords.has(normalizedWord)
+          ? "hero-char hero-word-token hero-char-highlight"
+          : "hero-char hero-word-token";
+        const spaceMarkup = wordIndex < words.length - 1 ? "<span class=\"hero-space-inline\"> </span>" : "";
+
+        return `<span class=\"hero-word\"><span aria-hidden=\"true\" class=\"${tokenClass}\" style=\"--char-delay:${delay}ms\">${escapeHtml(word)}</span>${spaceMarkup}</span>`;
+      })
+      .join("");
+  }
+
   let charIndex = 0;
 
   return words
@@ -196,13 +223,22 @@ function renderHeroTyping(language) {
   const headlineText = t(headlineKey, language) || headlineNode.getAttribute("aria-label") || "";
   const highlightText = t(highlightKey, language);
   const descriptionText = t(descriptionKey, language) || descriptionNode.getAttribute("aria-label") || "";
+  const useWordReveal = RTL_LANGUAGES.includes(language);
 
-  const highlightedIndexes = getHighlightCharacterIndexes(headlineText, highlightText);
-  const headlineMarkup = buildHeroMarkup(headlineText, HEADLINE_START_DELAY_MS, HEADLINE_STAGGER_MS, highlightedIndexes);
+  const highlightedIndexes = useWordReveal ? new Set() : getHighlightCharacterIndexes(headlineText, highlightText);
+  const headlineMarkup = buildHeroMarkup(headlineText, HEADLINE_START_DELAY_MS, HEADLINE_STAGGER_MS, highlightedIndexes, {
+    wordMode: useWordReveal,
+    highlightPhrase: highlightText
+  });
 
-  const headlineDuration = HEADLINE_START_DELAY_MS + Array.from(headlineText).length * HEADLINE_STAGGER_MS;
+  const headlineUnitCount = useWordReveal
+    ? headlineText.split(" ").filter(Boolean).length
+    : Array.from(headlineText).length;
+  const headlineDuration = HEADLINE_START_DELAY_MS + headlineUnitCount * (useWordReveal ? Math.max(HEADLINE_STAGGER_MS * 7, 76) : HEADLINE_STAGGER_MS);
   const descriptionStart = headlineDuration + DESCRIPTION_BUFFER_MS;
-  const descriptionMarkup = buildHeroMarkup(descriptionText, descriptionStart, DESCRIPTION_STAGGER_MS);
+  const descriptionMarkup = buildHeroMarkup(descriptionText, descriptionStart, DESCRIPTION_STAGGER_MS, new Set(), {
+    wordMode: useWordReveal
+  });
 
   headlineNode.setAttribute("aria-label", headlineText);
   descriptionNode.setAttribute("aria-label", descriptionText);

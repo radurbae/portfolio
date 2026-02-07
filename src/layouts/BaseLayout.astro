@@ -11,9 +11,9 @@ const {
 
 const TIMEZONE_LABEL = import.meta.env.PORTFOLIO_TIMEZONE_LABEL || "Asia/Jakarta";
 const TIMEZONE_NAME = import.meta.env.PORTFOLIO_TIMEZONE_NAME || "Asia/Jakarta";
-const LINKEDIN_URL = import.meta.env.PORTFOLIO_LINKEDIN || "https://linkedin.com";
-const DRIBBBLE_URL = import.meta.env.PORTFOLIO_DRIBBBLE || "https://dribbble.com";
 const INSTAGRAM_URL = import.meta.env.PORTFOLIO_INSTAGRAM || "https://instagram.com";
+const GITHUB_URL = import.meta.env.PORTFOLIO_GITHUB || "https://github.com/radurbae";
+const CONTACT_EMAIL = import.meta.env.PORTFOLIO_EMAIL || "radurbae@gmail.com";
 
 const currentPath = normalizePath(Astro.url.pathname, BASE_URL);
 const pageTitle = title ? `${title} | Rads Dev` : "Rads Dev";
@@ -47,15 +47,49 @@ const faviconHref = `${BASE_URL}favicon.png`;
         <slot />
       </main>
 
-      <footer data-reveal class="motion-reveal mx-auto mt-6 flex w-full max-w-[1360px] flex-col items-start justify-between gap-3 border-t border-[#dbdbdb] px-4 py-6 text-xs text-[#4c4c4c] sm:flex-row sm:items-center md:px-8">
-        <p data-i18n="footer.rights" data-i18n-year={new Date().getFullYear()}>© {new Date().getFullYear()} Raditya Adyatma. All rights reserved.</p>
-        <div class="flex flex-wrap items-center gap-3">
-          <a href={toPage("/about")} data-i18n="footer.about" class="transition-colors hover:text-[#151515]">About</a>
-          <a href={toPage("/work")} data-i18n="footer.work" class="transition-colors hover:text-[#151515]">Work</a>
-          <a href={toPage("/contact")} data-i18n="footer.contact" class="transition-colors hover:text-[#151515]">Contact</a>
-          <a href={LINKEDIN_URL} target="_blank" rel="noreferrer" data-i18n="footer.linkedin" class="transition-colors hover:text-[#151515]">LinkedIn</a>
-          <a href={DRIBBBLE_URL} target="_blank" rel="noreferrer" data-i18n="footer.dribbble" class="transition-colors hover:text-[#151515]">Dribbble</a>
-          <a href={INSTAGRAM_URL} target="_blank" rel="noreferrer" data-i18n="footer.instagram" class="transition-colors hover:text-[#151515]">Instagram</a>
+      <footer data-reveal class="motion-reveal mx-auto mt-8 w-full max-w-[1360px] px-4 pb-8 md:px-8 md:pb-10">
+        <div class="rounded-3xl border border-[#dbdbdb] bg-white/95 p-5 md:p-6">
+          <div class="flex flex-col items-start justify-between gap-3 text-xs text-[#4c4c4c] sm:flex-row sm:items-center">
+            <p data-i18n="footer.rights" data-i18n-year={new Date().getFullYear()}>
+              © {new Date().getFullYear()} Raditya Adyatma. All rights reserved.
+            </p>
+            <div class="flex flex-wrap items-center gap-2">
+              <a
+                href={INSTAGRAM_URL}
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Instagram"
+                class="inline-flex h-8 w-8 items-center justify-center rounded-full border border-[#d8d8d8] text-[#4c4c4c] transition-colors hover:bg-[#f3f3f3] hover:text-[#151515]"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true" class="h-3.5 w-3.5">
+                  <rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"></rect>
+                  <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"></circle>
+                  <circle cx="17.3" cy="6.7" r="1.2" fill="currentColor"></circle>
+                </svg>
+              </a>
+              <a
+                href={GITHUB_URL}
+                target="_blank"
+                rel="noreferrer"
+                aria-label="GitHub"
+                class="inline-flex h-8 w-8 items-center justify-center rounded-full border border-[#d8d8d8] text-[#4c4c4c] transition-colors hover:bg-[#f3f3f3] hover:text-[#151515]"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true" class="h-3.5 w-3.5">
+                  <path d="M12 2.8a9.2 9.2 0 0 0-2.9 17.9c.45.09.61-.19.61-.43v-1.5c-2.5.55-3.02-1.08-3.02-1.08-.41-1.02-1-1.29-1-1.29-.82-.56.06-.55.06-.55.9.06 1.37.92 1.37.92.8 1.36 2.1.97 2.62.74.08-.58.31-.97.56-1.2-2-.22-4.1-1-4.1-4.46 0-.99.35-1.8.92-2.44-.09-.23-.4-1.14.09-2.38 0 0 .75-.24 2.46.93a8.45 8.45 0 0 1 4.48 0c1.7-1.17 2.45-.93 2.45-.93.5 1.24.19 2.15.1 2.38.58.64.92 1.45.92 2.44 0 3.47-2.1 4.24-4.12 4.46.32.28.6.83.6 1.68v2.49c0 .24.16.52.62.43A9.2 9.2 0 0 0 12 2.8Z" fill="currentColor"></path>
+                </svg>
+              </a>
+              <a
+                href={`mailto:${CONTACT_EMAIL}`}
+                aria-label="Email"
+                class="inline-flex h-8 w-8 items-center justify-center rounded-full border border-[#d8d8d8] text-[#4c4c4c] transition-colors hover:bg-[#f3f3f3] hover:text-[#151515]"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true" class="h-3.5 w-3.5">
+                  <rect x="3.5" y="5.5" width="17" height="13" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.8"></rect>
+                  <path d="m5.8 7.6 6.2 4.8 6.2-4.8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
         </div>
       </footer>
     </div>
