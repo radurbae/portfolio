@@ -1,4 +1,19 @@
-import { DEFAULT_LANGUAGE, RTL_LANGUAGES, SUPPORTED_LANGUAGES, TRANSLATIONS } from "@/data/i18n";
+const i18nConfig =
+  typeof window !== "undefined" && window.__PORTFOLIO_I18N__
+    ? window.__PORTFOLIO_I18N__
+    : {};
+
+const DEFAULT_LANGUAGE = i18nConfig.DEFAULT_LANGUAGE || "en";
+const SUPPORTED_LANGUAGES = Array.isArray(i18nConfig.SUPPORTED_LANGUAGES)
+  ? i18nConfig.SUPPORTED_LANGUAGES
+  : ["en", "id", "ar"];
+const RTL_LANGUAGES = Array.isArray(i18nConfig.RTL_LANGUAGES)
+  ? i18nConfig.RTL_LANGUAGES
+  : ["ar"];
+const TRANSLATIONS =
+  i18nConfig.TRANSLATIONS && typeof i18nConfig.TRANSLATIONS === "object"
+    ? i18nConfig.TRANSLATIONS
+    : {};
 
 const THEME_STORAGE_KEY = "portfolio-theme";
 const LANGUAGE_STORAGE_KEY = "portfolio-language";
