@@ -56,11 +56,11 @@ const i18nPayload = JSON.stringify({
 
       <footer data-reveal class="motion-reveal mx-auto mt-8 w-full max-w-[1360px] px-4 pb-8 md:px-8 md:pb-10">
         <div class="rounded-3xl border border-[#dbdbdb] bg-white/95 p-5 md:p-6">
-          <div class="flex flex-col items-start justify-between gap-3 text-xs text-[#4c4c4c] sm:flex-row sm:items-center">
-            <p data-i18n="footer.rights" data-i18n-year={new Date().getFullYear()}>
+          <div class="flex flex-col items-center justify-between gap-3 text-center text-xs text-[#4c4c4c] sm:flex-row sm:items-center sm:text-left">
+            <p data-i18n="footer.rights" data-i18n-year={new Date().getFullYear()} class="leading-relaxed">
               © {new Date().getFullYear()} Raditya Adyatma. All rights reserved.
             </p>
-            <div class="flex flex-wrap items-center gap-2">
+            <div class="flex flex-wrap items-center justify-center gap-2 sm:justify-end">
               <a
                 href={INSTAGRAM_URL}
                 target="_blank"
