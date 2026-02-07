@@ -5,3 +5,5 @@ out
 dist
 *.log
 .DS_Store
+.i18n-translate-cache.json
+.i18n-state.json
