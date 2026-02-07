@@ -589,6 +589,7 @@ function setupInquiryForm() {
 
 function initializeSite() {
   const basePath = document.body.getAttribute("data-base-url") || "/";
+  document.documentElement.classList.add("js-motion-ready");
 
   setupLanguageSwitcher();
   setupTheme(basePath);

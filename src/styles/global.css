@@ -152,18 +152,25 @@ html.dark .border-\[\#d2d2d2\] {
 
   .motion-reveal,
   .reveal-item {
-    opacity: 0;
-    transform: translate3d(0, var(--motion-distance), 0) scale(0.985);
+    opacity: 1;
+    transform: none;
     transition:
       transform var(--motion-duration) var(--motion-ease),
       opacity calc(var(--motion-duration) - 120ms) ease,
       filter calc(var(--motion-duration) - 120ms) ease;
     transition-delay: var(--reveal-delay, 0ms);
+    filter: none;
+  }
+
+  html.js-motion-ready .motion-reveal,
+  html.js-motion-ready .reveal-item {
+    opacity: 0;
+    transform: translate3d(0, var(--motion-distance), 0) scale(0.985);
     filter: blur(2px);
   }
 
-  .motion-reveal.is-visible,
-  .reveal-item.is-visible {
+  html.js-motion-ready .motion-reveal.is-visible,
+  html.js-motion-ready .reveal-item.is-visible {
     opacity: 1;
     transform: translate3d(0, 0, 0) scale(1);
     filter: blur(0);
