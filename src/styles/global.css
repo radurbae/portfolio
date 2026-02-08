@@ -155,6 +155,31 @@ html.dark .border-\[\#d2d2d2\] {
     }
   }
 
+  @media (max-width: 639px) {
+    .floating-nav {
+      position: fixed;
+      left: 50%;
+      bottom: calc(env(safe-area-inset-bottom, 0px) + 0.7rem);
+      transform: translate3d(-50%, 0, 0);
+      z-index: 75;
+      width: min(calc(100vw - 1rem), 360px);
+      max-width: none;
+      filter: drop-shadow(0 16px 30px rgba(10, 18, 30, 0.18));
+    }
+
+    .floating-nav.is-floating {
+      top: auto;
+      left: 50%;
+      bottom: calc(env(safe-area-inset-bottom, 0px) + 0.7rem);
+      transform: translate3d(-50%, 0, 0);
+    }
+
+    html.dark .floating-nav,
+    html.dark .floating-nav.is-floating {
+      filter: drop-shadow(0 18px 30px rgba(0, 0, 0, 0.42));
+    }
+  }
+
   html.dark .floating-nav.is-floating {
     filter: drop-shadow(0 16px 30px rgba(0, 0, 0, 0.36));
   }

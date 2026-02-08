@@ -43,14 +43,14 @@ const i18nPayload = JSON.stringify({
           <span>{TIMEZONE_LABEL}</span>
           <span data-live-clock data-time-zone={TIMEZONE_NAME}></span>
         </div>
-        <div data-floating-nav-shell class="mt-5 flex h-[52px] items-start justify-center">
+        <div data-floating-nav-shell class="mt-2 flex h-0 items-start justify-center sm:mt-5 sm:h-[52px]">
           <div data-floating-nav class="floating-nav">
             <SiteNav currentPath={currentPath} />
           </div>
         </div>
       </header>
 
-      <main class="mx-auto w-full max-w-[1360px] px-4 pb-16 pt-10 md:px-8 md:pt-14">
+      <main class="mx-auto w-full max-w-[1360px] px-4 pb-24 pt-10 sm:pb-16 md:px-8 md:pt-14">
         <slot />
       </main>
 
