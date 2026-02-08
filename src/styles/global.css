@@ -162,8 +162,8 @@ html.dark .border-\[\#d2d2d2\] {
       bottom: calc(env(safe-area-inset-bottom, 0px) + 0.7rem);
       transform: translate3d(-50%, 0, 0);
       z-index: 75;
-      width: min(calc(100vw - 1rem), 360px);
-      max-width: none;
+      width: max-content;
+      max-width: calc(100vw - 1rem);
       filter: drop-shadow(0 16px 30px rgba(10, 18, 30, 0.18));
     }
 
