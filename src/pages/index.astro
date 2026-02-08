@@ -6,8 +6,7 @@ import {
   PROCESS_STEPS,
   PROFILE,
   SERVICE_PILLARS,
-  SNAPSHOT_METRICS,
-  TRUST_ITEMS
+  SNAPSHOT_METRICS
 } from "@/data/portfolio-data";
 import { toPage } from "@/utils/paths";
 
@@ -60,24 +59,6 @@ const HERO_TYPING_DESCRIPTION =
         ))
       }
     </div>
-  </section>
-
-  <section data-reveal style="--reveal-delay:40ms" class="motion-reveal border-y border-[#dddddd] py-7">
-    <div data-i18n="home.selectedBuilds" class="mb-3 text-center text-xs font-semibold uppercase tracking-[0.1em] text-[#5a5a5a]">
-      Selected Product Builds
-    </div>
-    <ul class="grid grid-cols-2 gap-2 text-center sm:grid-cols-3 lg:grid-cols-6">
-      {
-        TRUST_ITEMS.map((item, trustIndex) => (
-          <li>
-            <div class="motion-card flex min-h-[56px] flex-col items-center justify-center rounded-xl border border-[#dbdbdb] bg-white px-2">
-              <p class="text-sm font-semibold">{item.name}</p>
-              <p data-i18n={`home.trustTypes.${trustIndex}`} class="text-xs text-[#5a5a5a]">{item.type}</p>
-            </div>
-          </li>
-        ))
-      }
-    </ul>
   </section>
 
   <section data-reveal class="motion-reveal py-10 md:py-12">

@@ -1,86 +1,215 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
+import { BASE_URL } from "@/utils/paths";
 
-const PRINCIPLES = [
+const GITHUB_URL = import.meta.env.PORTFOLIO_GITHUB || "https://github.com/radurbae";
+const INSTAGRAM_URL = import.meta.env.PORTFOLIO_INSTAGRAM || "https://instagram.com";
+const LINKEDIN_URL = import.meta.env.PORTFOLIO_LINKEDIN || "https://linkedin.com";
+const CONTACT_EMAIL = import.meta.env.PORTFOLIO_EMAIL || "radurbae@gmail.com";
+const avatarPath = import.meta.env.PORTFOLIO_AVATAR || "radsdev-logo.png";
+const AVATAR_URL = avatarPath.startsWith("http")
+  ? avatarPath
+  : `${BASE_URL}${avatarPath.replace(/^\/+/, "")}`;
+
+const EXPERIENCE_ITEMS = [
   {
-    title: "Outcome before decoration",
-    description: "Every design or engineering decision must support a concrete product objective."
+    company: "Rads Dev",
+    role: "Brand Designer and Fullstack Developer",
+    type: "Independent",
+    period: "2022 - Present",
+    summary:
+      "Delivering brand systems and production-ready digital products across website, software, and mobile projects."
   },
   {
-    title: "Brand and product in one loop",
-    description: "Identity, UX, and implementation are developed together to avoid handoff drift."
-  },
-  {
-    title: "MVP speed with long-term structure",
-    description: "Ship quickly, but build systems that can scale without redesigning from zero."
+    company: "Client Collaborations",
+    role: "Product and Interface Builder",
+    type: "Project-Based",
+    period: "2020 - 2022",
+    summary:
+      "Worked with teams to ship clean brand-led interfaces, from product strategy to frontend implementation."
   }
 ];
 
-const CAPABILITIES = [
-  "Brand strategy and visual identity",
-  "Web design and front-end engineering",
-  "SaaS and internal software interfaces",
-  "Mobile app UX and implementation",
-  "Design systems and component architecture",
-  "Cross-functional product delivery"
+const EDUCATION_ITEMS = [
+  {
+    institution: "Universitas Negeri Jakarta",
+    detail: "Informatics and software-focused studies with project-based product development.",
+    period: "2019 - 2023"
+  }
 ];
+
+const SKILL_GROUPS = [
+  {
+    name: "Languages",
+    items: ["JavaScript", "TypeScript", "HTML", "CSS", "SQL"]
+  },
+  {
+    name: "Frameworks",
+    items: ["Astro", "React", "Next.js", "Tailwind CSS", "Node.js"]
+  },
+  {
+    name: "Tools",
+    items: ["Figma", "GitHub", "VS Code", "Postman", "Supabase"]
+  }
+];
+
+const SKILL_ICON_BY_NAME = {
+  JavaScript: "ti ti-brand-javascript",
+  TypeScript: "ti ti-brand-typescript",
+  HTML: "ti ti-brand-html5",
+  CSS: "ti ti-brand-css3",
+  SQL: "ti ti-database",
+  Astro: "ti ti-brand-astro",
+  React: "ti ti-brand-react",
+  "Next.js": "ti ti-brand-nextjs",
+  "Tailwind CSS": "ti ti-brand-tailwind",
+  "Node.js": "ti ti-brand-nodejs",
+  Figma: "ti ti-brand-figma",
+  GitHub: "ti ti-brand-github",
+  "VS Code": "ti ti-brand-vscode",
+  Postman: "ti ti-api",
+  Supabase: "ti ti-brand-supabase"
+};
 ---
 
 <BaseLayout title="About">
-  <section class="px-6 py-8 md:px-10 md:py-12">
-    <p data-reveal data-i18n="about.badge" class="motion-reveal inline-flex rounded-full border border-[#c8c5ba] bg-white px-3 py-1 text-xs font-semibold">About</p>
-    <h1 data-reveal style="--reveal-delay:80ms" class="motion-reveal mt-4 max-w-[760px] text-4xl font-semibold leading-tight md:text-6xl">
-      <span data-i18n="about.headline">
-      I design the brand and build the product so both feel like one system.
-      </span>
-    </h1>
-    <p data-reveal data-i18n="about.description" style="--reveal-delay:130ms" class="motion-reveal mt-4 max-w-[760px] text-sm text-[#4c4c4c] md:text-base">
-      My focus is helping teams launch clear, conversion-ready digital products across brand,
-      website, software, and mobile. The goal is simple: make experiences understandable,
-      maintainable, and effective in real use.
-    </p>
+  <section class="py-8 md:py-12">
+    <div data-reveal class="motion-reveal mx-auto max-w-[980px] rounded-[2rem] border border-[#dbdbdb] bg-white/95 p-6 text-center md:p-10">
+      <div class="mx-auto h-28 w-28 overflow-hidden rounded-full border border-[#d9d9d9] bg-[#faf9f6] p-2 shadow-[0_10px_24px_rgba(0,0,0,0.08)]">
+        <img src={AVATAR_URL} alt="Rads Dev" loading="lazy" class="h-full w-full rounded-full object-cover" />
+      </div>
+      <p data-i18n="about.location" class="mt-4 text-sm font-medium text-[#4c4c4c]">Asia/Jakarta</p>
+      <h1 data-reveal data-i18n="about.profileName" style="--reveal-delay:80ms" class="motion-reveal mx-auto mt-3 max-w-[920px] text-balance text-4xl font-semibold leading-[1.08] md:text-6xl">
+        Raditya Adyatma (RADS)
+      </h1>
+      <p data-reveal data-i18n="about.profileRole" style="--reveal-delay:120ms" class="motion-reveal mt-3 text-base text-[#4c4c4c] md:text-2xl">
+        Brand Designer and Fullstack Developer
+      </p>
 
-    <section data-reveal class="motion-reveal mt-8 rounded-2xl border border-[#d9d7ce] bg-white p-5">
-      <h2 data-i18n="about.principlesTitle" class="text-2xl font-semibold">Principles</h2>
-      <div class="mt-4 grid grid-cols-1 gap-3 lg:grid-cols-3">
-        {PRINCIPLES.map((principle, index) => (
-            <article class="motion-card rounded-xl border border-[#e2e0d8] bg-[#faf9f6] p-4">
-              <h3 data-i18n={`about.principles.${index}.title`} class="text-base font-semibold">{principle.title}</h3>
-              <p data-i18n={`about.principles.${index}.description`} class="mt-2 text-sm text-[#4c4c4c]">{principle.description}</p>
+      <div data-reveal style="--reveal-delay:160ms" class="motion-reveal mt-5 flex flex-wrap items-center justify-center gap-2">
+        <a
+          href={INSTAGRAM_URL}
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Instagram"
+          class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-[#d8d8d8] bg-white text-[#4c4c4c] transition-colors hover:bg-[#f3f3f3] hover:text-[#151515]"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true" class="h-4 w-4">
+            <rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"></rect>
+            <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"></circle>
+            <circle cx="17.3" cy="6.7" r="1.2" fill="currentColor"></circle>
+          </svg>
+        </a>
+        <a
+          href={GITHUB_URL}
+          target="_blank"
+          rel="noreferrer"
+          aria-label="GitHub"
+          class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-[#d8d8d8] bg-white text-[#4c4c4c] transition-colors hover:bg-[#f3f3f3] hover:text-[#151515]"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true" class="h-4 w-4">
+            <path d="M12 2.8a9.2 9.2 0 0 0-2.9 17.9c.45.09.61-.19.61-.43v-1.5c-2.5.55-3.02-1.08-3.02-1.08-.41-1.02-1-1.29-1-1.29-.82-.56.06-.55.06-.55.9.06 1.37.92 1.37.92.8 1.36 2.1.97 2.62.74.08-.58.31-.97.56-1.2-2-.22-4.1-1-4.1-4.46 0-.99.35-1.8.92-2.44-.09-.23-.4-1.14.09-2.38 0 0 .75-.24 2.46.93a8.45 8.45 0 0 1 4.48 0c1.7-1.17 2.45-.93 2.45-.93.5 1.24.19 2.15.1 2.38.58.64.92 1.45.92 2.44 0 3.47-2.1 4.24-4.12 4.46.32.28.6.83.6 1.68v2.49c0 .24.16.52.62.43A9.2 9.2 0 0 0 12 2.8Z" fill="currentColor"></path>
+          </svg>
+        </a>
+        <a
+          href={LINKEDIN_URL}
+          target="_blank"
+          rel="noreferrer"
+          aria-label="LinkedIn"
+          class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-[#d8d8d8] bg-white text-[#4c4c4c] transition-colors hover:bg-[#f3f3f3] hover:text-[#151515]"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true" class="h-4 w-4">
+            <rect x="3.8" y="3.8" width="16.4" height="16.4" rx="3.3" fill="none" stroke="currentColor" stroke-width="1.8"></rect>
+            <path d="M8.2 10.2v5.6M8.2 8.1a.95.95 0 1 1 0 .01M11.2 15.8v-3.3c0-1 .8-1.8 1.8-1.8s1.8.8 1.8 1.8v3.3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </a>
+        <a
+          href={`mailto:${CONTACT_EMAIL}`}
+          aria-label="Email"
+          class="inline-flex h-9 w-9 items-center justify-center rounded-full border border-[#d8d8d8] bg-white text-[#4c4c4c] transition-colors hover:bg-[#f3f3f3] hover:text-[#151515]"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true" class="h-4 w-4">
+            <rect x="3.5" y="5.5" width="17" height="13" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.8"></rect>
+            <path d="m5.8 7.6 6.2 4.8 6.2-4.8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </a>
+      </div>
+
+      <p
+        data-reveal
+        data-i18n="about.description"
+        style="--reveal-delay:220ms"
+        class="motion-reveal mx-auto mt-5 max-w-[760px] text-balance text-sm leading-relaxed text-[#4c4c4c] md:text-base"
+      >
+        My focus is helping teams launch clear, conversion-ready digital products across brand,
+        website, software, and mobile. The goal is simple: make experiences understandable,
+        maintainable, and effective in real use.
+      </p>
+    </div>
+
+    <div data-reveal class="motion-reveal mx-auto mt-5 max-w-[980px] rounded-3xl border border-[#dbdbdb] bg-white p-6 md:p-8">
+      <h2 data-i18n="about.experienceTitle" class="text-3xl font-semibold md:text-4xl">Work Experience</h2>
+      <div class="mt-5 divide-y divide-[#e2e0d8] rounded-2xl border border-[#e2e0d8] bg-[#faf9f6]">
+        {
+          EXPERIENCE_ITEMS.map((item, index) => (
+            <article class="grid grid-cols-1 gap-3 px-4 py-4 md:grid-cols-[1fr_auto] md:px-5">
+              <div>
+                <h3 data-i18n={`about.experience.${index}.company`} class="text-xl font-semibold md:text-2xl">{item.company}</h3>
+                <p data-i18n={`about.experience.${index}.role`} class="mt-1 text-sm font-medium text-[#2f6dff] md:text-base">{item.role}</p>
+                <p data-i18n={`about.experience.${index}.summary`} class="mt-2 max-w-[700px] text-sm text-[#4c4c4c] md:text-base">{item.summary}</p>
+              </div>
+              <div class="md:text-right">
+                <p data-i18n={`about.experience.${index}.period`} class="text-sm font-semibold text-[#4c4c4c] md:text-base">{item.period}</p>
+                <p data-i18n={`about.experience.${index}.type`} class="text-xs font-medium uppercase tracking-[0.08em] text-[#5a5a5a] md:text-sm">{item.type}</p>
+              </div>
             </article>
-        ))}
+          ))
+        }
       </div>
-    </section>
+    </div>
 
-    <section data-reveal class="motion-reveal mt-5 rounded-2xl border border-[#d9d7ce] bg-white p-5">
-      <h2 data-i18n="about.capabilitiesTitle" class="text-2xl font-semibold">Capabilities</h2>
-      <ul class="mt-4 grid grid-cols-1 gap-2 text-sm text-[#4c4c4c] sm:grid-cols-2 lg:grid-cols-3">
-        {CAPABILITIES.map((item, index) => <li data-i18n={`about.capabilities.${index}`} class="motion-card rounded-lg border border-[#e2e0d8] bg-[#faf9f6] px-3 py-2">{item}</li>)}
-      </ul>
-    </section>
+    <div class="mx-auto mt-5 grid max-w-[980px] grid-cols-1 gap-5 lg:grid-cols-[0.95fr_1.65fr]">
+      <section data-reveal class="motion-reveal rounded-3xl border border-[#dbdbdb] bg-white p-6 md:p-7">
+        <h2 data-i18n="about.educationTitle" class="text-3xl font-semibold md:text-4xl">Education</h2>
+        <ul class="mt-5 space-y-3">
+          {
+            EDUCATION_ITEMS.map((item, index) => (
+              <li class="rounded-2xl border border-[#e2e0d8] bg-[#faf9f6] px-4 py-4">
+                <h3 data-i18n={`about.education.${index}.institution`} class="text-lg font-semibold md:text-xl">{item.institution}</h3>
+                <p data-i18n={`about.education.${index}.detail`} class="mt-1 text-sm text-[#4c4c4c] md:text-base">{item.detail}</p>
+                <p data-i18n={`about.education.${index}.period`} class="mt-3 text-xs font-semibold uppercase tracking-[0.09em] text-[#5a5a5a]">{item.period}</p>
+              </li>
+            ))
+          }
+        </ul>
+      </section>
 
-    <section data-reveal class="motion-reveal mt-5 rounded-2xl border border-[#d9d7ce] bg-white p-5">
-      <h2 data-i18n="about.workingStyleTitle" class="text-2xl font-semibold">Working Style</h2>
-      <div class="mt-4 grid grid-cols-1 gap-3 md:grid-cols-3">
-        <article class="motion-card rounded-xl border border-[#e2e0d8] bg-[#faf9f6] p-4">
-          <h3 data-i18n="about.workingStyle.0.title" class="text-base font-semibold">Lean Collaboration</h3>
-          <p data-i18n="about.workingStyle.0.description" class="mt-2 text-sm text-[#4c4c4c]">
-            Short feedback loops, visible priorities, and fast decision cycles.
-          </p>
-        </article>
-        <article class="motion-card rounded-xl border border-[#e2e0d8] bg-[#faf9f6] p-4">
-          <h3 data-i18n="about.workingStyle.1.title" class="text-base font-semibold">Design-to-Code Continuity</h3>
-          <p data-i18n="about.workingStyle.1.description" class="mt-2 text-sm text-[#4c4c4c]">
-            Components and interaction patterns are designed with implementation in mind.
-          </p>
-        </article>
-        <article class="motion-card rounded-xl border border-[#e2e0d8] bg-[#faf9f6] p-4">
-          <h3 data-i18n="about.workingStyle.2.title" class="text-base font-semibold">Evidence-Based Iteration</h3>
-          <p data-i18n="about.workingStyle.2.description" class="mt-2 text-sm text-[#4c4c4c]">
-            Decisions evolve based on product usage, not personal preference alone.
-          </p>
-        </article>
-      </div>
-    </section>
+      <section data-reveal class="motion-reveal rounded-3xl border border-[#dbdbdb] bg-white p-6 md:p-7">
+        <h2 data-i18n="about.skillsTitle" class="text-3xl font-semibold md:text-4xl">Technical Skills</h2>
+        <div class="mt-5 space-y-5">
+          {
+            SKILL_GROUPS.map((group, groupIndex) => (
+              <div>
+                <h3 data-i18n={`about.skillsGroups.${groupIndex}.name`} class="text-xl font-semibold">{group.name}</h3>
+                <ul class="mt-3 flex flex-wrap gap-2">
+                  {
+                    group.items.map((item, itemIndex) => {
+                      const iconClass = SKILL_ICON_BY_NAME[item];
+
+                      return (
+                        <li class="inline-flex items-center gap-1.5 rounded-full border border-[#d2d2d2] bg-[#f8f8f6] px-3 py-1 text-sm font-medium text-[#3f3f3f]">
+                          {iconClass && <i class={`${iconClass} text-[16px] leading-none text-[#4c4c4c]`} aria-hidden="true"></i>}
+                          <span data-i18n={`about.skillsGroups.${groupIndex}.items.${itemIndex}`}>{item}</span>
+                        </li>
+                      );
+                    })
+                  }
+                </ul>
+              </div>
+            ))
+          }
+        </div>
+      </section>
+    </div>
   </section>
 </BaseLayout>
