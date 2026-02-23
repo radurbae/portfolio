@@ -2,76 +2,75 @@ export const PROFILE = {
   name: "Raditya Adyatma",
   handle: "RADS",
   title: "Available for hire",
-  heroHeadline: "Building digital products where brand and product ship as one system",
+  heroHeadline: "Founder, Student, and Multidisciplinary Developer",
   heroDescription:
-    "I help founders and teams launch clear brand-led experiences across web, software, and mobile. From positioning and UI to production code, everything stays coherent from first click to release.",
+    "I bring structural clarity and intelligent systems to digital products. Specializing in bridging Fullstack Software Engineering with AI integrations, while applying strategic insights from Economics & Law to community platforms and scalable apps.",
   location: "Asia/Jakarta",
   availability: "Available for collaborations"
 };
 
 export const TRUST_ITEMS = [
-  { name: "AtlasPay", type: "Brand + Mobile" },
-  { name: "MitraPOS", type: "Web Software" },
-  { name: "Noura Health", type: "Brand + Website" },
-  { name: "RouteOps", type: "Mobile + Backend" },
-  { name: "EduStack", type: "LMS Platform" },
-  { name: "Studio Docs", type: "Internal Product" }
+  { name: "1% Readers", type: "Community Platform" },
+  { name: "TIL", type: "Knowledge Base" },
+  { name: "One Percent", type: "Productivity Application" },
+  { name: "Valentine", type: "Interactive Media" },
+  { name: "Modern POS", type: "Web Software" }
 ];
 
 export const SERVICE_PILLARS = [
   {
-    title: "Brand Systems",
+    title: "Software Engineering",
     description:
-      "Identity direction, visual language, and scalable design rules to keep every product touchpoint consistent.",
-    items: ["Brand strategy", "Visual identity", "Design guidelines"]
+      "Fullstack architectures, clear backend integrations, and responsive frontend applications built for performance.",
+    items: ["Fullstack capabilities", "Interactive UI/UX", "System maintenance"]
   },
   {
-    title: "Web Experiences",
+    title: "AI & Machine Learning",
     description:
-      "Marketing and product websites built for performance, conversion, and editorial flexibility.",
-    items: ["Landing pages", "CMS architecture", "Performance optimization"]
+      "Integrating intelligent models and data-driven insights to transform raw tools into smarter products.",
+    items: ["Deep Learning models", "Data analysis", "TensorFlow integrations"]
   },
   {
-    title: "Software Products",
+    title: "Management & Leadership",
     description:
-      "Product UX and frontend architecture for dashboards, internal tools, and SaaS platforms.",
-    items: ["UX flows", "Design systems", "Frontend implementation"]
+      "Cross-functional team leadership and structured project setups designed for consistent, high-velocity delivery.",
+    items: ["Team management", "Strategic planning", "Mentoring"]
   },
   {
-    title: "Mobile Apps",
+    title: "Economics & Law",
     description:
-      "Native-feeling mobile interfaces with clear task flows, robust states, and maintainable code.",
-    items: ["iOS/Android UX", "Component libraries", "API integration"]
+      "Applying critical thinking, Islamic finance principles, and operational logic to complex business platforms.",
+    items: ["Process logic", "Financial integrations", "Analytical problem solving"]
   }
 ];
 
 export const PROCESS_STEPS = [
   {
     step: "01",
-    title: "Discover",
-    description: "Align goals, users, and constraints through focused product and brand discovery."
+    title: "Analyze & Learn",
+    description: "Deep dive into the problem space, analyzing constraints through a multidisciplinary lens."
   },
   {
     step: "02",
-    title: "Define",
-    description: "Translate findings into system direction, priorities, and measurable outcomes."
+    title: "Design & Prototype",
+    description: "Drafting scalable UI and defining system architectures for robust, clean execution."
   },
   {
     step: "03",
-    title: "Design + Build",
-    description: "Design and implementation happen in one loop to reduce handoff friction."
+    title: "Develop & Integrate",
+    description: "Writing strict, typed code and integrating intelligent APIs cleanly without friction."
   },
   {
     step: "04",
-    title: "Launch + Iterate",
-    description: "Release quickly, monitor behavior, and improve with clear post-launch priorities."
+    title: "Ship & Lead",
+    description: "Launching the product, documenting the process, and managing community or team growth."
   }
 ];
 
 export const SNAPSHOT_METRICS = [
-  { label: "Projects Delivered", value: "18+" },
-  { label: "Disciplines Integrated", value: "4" },
-  { label: "Typical MVP Timeline", value: "4-8 weeks" }
+  { label: "Community Founded", value: "1% Readers" },
+  { label: "Open Source Projects", value: "5+" },
+  { label: "Tech Disciplines", value: "4+" }
 ];
 
 export const CASE_STUDIES = [

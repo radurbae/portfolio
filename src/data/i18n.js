@@ -28,60 +28,59 @@ export const TRANSLATIONS = {
     },
     "home": {
       "profileTitle": "Available For Hire",
-      "heroHeadline": "YOUR DIGITAL DEVELOPMENT PARTNER",
-      "heroHighlight": "Digital Development",
-      "heroDescription": "Brand & Software Development Partner: Delivering high-quality digital experiences with precision and performance. I build for organizations and businesses who demand professional, future-ready solutions.",
+      "heroHeadline": "Founder, Student, and Multidisciplinary Developer",
+      "heroHighlight": "Multidisciplinary",
+      "heroDescription": "I bring structural clarity and intelligent systems to digital products. Specializing in bridging Fullstack Software Engineering with AI integrations, while applying strategic insights from Economics & Law to community platforms and scalable apps.",
       "getInTouch": "Get in touch",
       "metrics": {
-        "projects": "Projects Delivered",
-        "disciplines": "Disciplines Integrated",
-        "timeline": "Typical MVP Timeline"
+        "projects": "Community Founded",
+        "disciplines": "Open Source Projects",
+        "timeline": "Tech Disciplines"
       },
       "selectedBuilds": "Selected Product Builds",
       "trustTypes": [
-        "Brand + Mobile",
-        "Web Software",
-        "Brand + Website",
-        "Mobile + Backend",
-        "LMS Platform",
-        "Internal Product"
+        "Community Platform",
+        "Knowledge Base",
+        "Productivity Application",
+        "Interactive Media",
+        "Web Software"
       ],
       "servicesTitle": "Multidisciplinary Services",
       "services": [
         {
-          "title": "Brand Systems",
-          "description": "Identity direction, visual language, and scalable design rules to keep every product touchpoint consistent.",
+          "title": "Software Engineering",
+          "description": "Fullstack architectures, clear backend integrations, and responsive frontend applications built for performance.",
           "items": [
-            "Brand strategy",
-            "Visual identity",
-            "Design guidelines"
+            "Fullstack capabilities",
+            "Interactive UI/UX",
+            "System maintenance"
           ]
         },
         {
-          "title": "Web Experiences",
-          "description": "Marketing and product websites built for performance, conversion, and editorial flexibility.",
+          "title": "AI & Machine Learning",
+          "description": "Integrating intelligent models and data-driven insights to transform raw tools into smarter products.",
           "items": [
-            "Landing pages",
-            "CMS architecture",
-            "Performance optimization"
+            "Deep Learning models",
+            "Data analysis",
+            "TensorFlow integrations"
           ]
         },
         {
-          "title": "Software Products",
-          "description": "Product UX and frontend architecture for dashboards, internal tools, and SaaS platforms.",
+          "title": "Management & Leadership",
+          "description": "Cross-functional team leadership and structured project setups designed for consistent, high-velocity delivery.",
           "items": [
-            "UX flows",
-            "Design systems",
-            "Frontend implementation"
+            "Team management",
+            "Strategic planning",
+            "Mentoring"
           ]
         },
         {
-          "title": "Mobile Apps",
-          "description": "Native-feeling mobile interfaces with clear task flows, robust states, and maintainable code.",
+          "title": "Economics & Law",
+          "description": "Applying critical thinking, Islamic finance principles, and operational logic to complex business platforms.",
           "items": [
-            "iOS/Android UX",
-            "Component libraries",
-            "API integration"
+            "Process logic",
+            "Financial integrations",
+            "Analytical problem solving"
           ]
         }
       ],
@@ -93,24 +92,24 @@ export const TRANSLATIONS = {
       "processTitle": "How projects move from brief to launch",
       "process": [
         {
-          "title": "Discover",
-          "description": "Align goals, users, and constraints through focused product and brand discovery."
+          "title": "Analyze & Learn",
+          "description": "Deep dive into the problem space, analyzing constraints through a multidisciplinary lens."
         },
         {
-          "title": "Define",
-          "description": "Translate findings into system direction, priorities, and measurable outcomes."
+          "title": "Design & Prototype",
+          "description": "Drafting scalable UI and defining system architectures for robust, clean execution."
         },
         {
-          "title": "Design + Build",
-          "description": "Design and implementation happen in one loop to reduce handoff friction."
+          "title": "Develop & Integrate",
+          "description": "Writing strict, typed code and integrating intelligent APIs cleanly without friction."
         },
         {
-          "title": "Launch + Iterate",
-          "description": "Release quickly, monitor behavior, and improve with clear post-launch priorities."
+          "title": "Ship & Lead",
+          "description": "Launching the product, documenting the process, and managing community or team growth."
         }
       ],
       "nextProject": "Next Project",
-      "nextTitle": "Need a partner who can handle brand, interface, and product build in one flow?",
+      "nextTitle": "Need a partner who can handle fullstack logic, interface, and growth in one flow?",
       "continueToContact": "Continue to contact"
     },
     "about": {
@@ -118,7 +117,7 @@ export const TRANSLATIONS = {
       "location": "Asia/Jakarta",
       "profileName": "Raditya Adyatma",
       "profileRole": "Siswa di Universitas Darussalam Gontor - Founder 1% Readers",
-      "description": "I am a multidisciplinary builder focused on brand clarity and product execution. I help teams ship coherent experiences across website, software, and mobile from strategy to implementation.",
+      "description": "I am a multidisciplinary builder combining deep technical expertise with strategic community vision. As the founder of 1% Readers and a student of Islamic Economics Law, I solve complex problems by bridging Fullstack Software Engineering and AI Machine Learning with robust operational logic.",
       "experienceTitle": "Work Experience",
       "experience": [
         {
@@ -332,60 +331,59 @@ export const TRANSLATIONS = {
     },
     "home": {
       "profileTitle": "Tersedia Untuk Disewa",
-      "heroHeadline": "MITRA PENGEMBANGAN DIGITAL ANDA",
-      "heroHighlight": "Perkembangan Digital",
-      "heroDescription": "Mitra Pengembangan Merek & Perangkat Lunak: Memberikan pengalaman digital berkualitas tinggi dengan presisi dan kinerja. Saya membangun untuk organisasi dan bisnis yang menginginkan solusi profesional dan siap menghadapi masa depan.",
+      "heroHeadline": "Pendiri, Mahasiswa, dan Pengembang Multidisiplin",
+      "heroHighlight": "Multidisiplin",
+      "heroDescription": "Saya menghadirkan kejelasan struktural dan sistem cerdas pada produk digital. Mengkhususkan diri dalam menjembatani Rekayasa Perangkat Lunak Fullstack dengan integrasi AI, sambil menerapkan wawasan strategis dari Ekonomi & Hukum ke platform komunitas dan aplikasi yang skalabel.",
       "getInTouch": "Hubungi kami",
       "metrics": {
-        "projects": "Proyek Disampaikan",
-        "disciplines": "Disiplin Terintegrasi",
-        "timeline": "Garis Waktu MVP Khas"
+        "projects": "Komunitas Didirikan",
+        "disciplines": "Proyek Sumber Terbuka",
+        "timeline": "Disiplin Teknologi"
       },
       "selectedBuilds": "Pembuatan Produk Terpilih",
       "trustTypes": [
-        "Merek + Seluler",
-        "Perangkat Lunak Web",
-        "Merek + Situs Web",
-        "Seluler + Backend",
-        "Platform LMS",
-        "Produk Dalaman"
+        "Platform Komunitas",
+        "Basis Pengetahuan",
+        "Aplikasi Produktivitas",
+        "Media Interaktif",
+        "Perangkat Lunak Web"
       ],
       "servicesTitle": "Layanan Multidisiplin",
       "services": [
         {
-          "title": "Sistem Merek",
-          "description": "Arah identitas, bahasa visual, dan aturan desain yang dapat diskalakan untuk menjaga setiap titik kontak produk tetap konsisten.",
+          "title": "Rekayasa Perangkat Lunak",
+          "description": "Arsitektur fullstack, integrasi backend yang jelas, dan aplikasi frontend responsif yang dibangun untuk kinerja.",
           "items": [
-            "Strategi merek",
-            "Identitas visual",
-            "Pedoman desain"
+            "Kemampuan tumpukan penuh",
+            "UI/UX Interaktif",
+            "Pemeliharaan sistem"
           ]
         },
         {
-          "title": "Pengalaman Web",
-          "description": "Situs web pemasaran dan produk dibuat untuk kinerja, konversi, dan fleksibilitas editorial.",
+          "title": "AI & Pembelajaran Mesin",
+          "description": "Mengintegrasikan model cerdas dan wawasan berbasis data untuk mengubah alat mentah menjadi produk yang lebih cerdas.",
           "items": [
-            "Halaman arahan",
-            "arsitektur CMS",
-            "Pengoptimalan kinerja"
+            "Model Pembelajaran Mendalam",
+            "Analisis data",
+            "Integrasi TensorFlow"
           ]
         },
         {
-          "title": "Produk Perangkat Lunak",
-          "description": "UX produk dan arsitektur frontend untuk dasbor, alat internal, dan platform SaaS.",
+          "title": "Manajemen & Kepemimpinan",
+          "description": "Kepemimpinan tim lintas fungsi dan pengaturan proyek terstruktur dirancang untuk penyampaian yang konsisten dan berkecepatan tinggi.",
           "items": [
-            "Aliran UX",
-            "Sistem desain",
-            "Implementasi ujung depan"
+            "Manajemen tim",
+            "Perencanaan strategis",
+            "Pendampingan"
           ]
         },
         {
-          "title": "Aplikasi Seluler",
-          "description": "Antarmuka seluler native - feeling dengan alur tugas yang jelas, status yang kuat, dan kode yang dapat dipelihara.",
+          "title": "Ekonomi & Hukum",
+          "description": "Menerapkan pemikiran kritis, prinsip keuangan Islam, dan logika operasional pada platform bisnis yang kompleks.",
           "items": [
-            "iOS/Android UX",
-            "Perpustakaan komponen",
-            "Integrasi API"
+            "Logika proses",
+            "Integrasi keuangan",
+            "Pemecahan masalah secara analitis"
           ]
         }
       ],
@@ -397,24 +395,24 @@ export const TRANSLATIONS = {
       "processTitle": "Bagaimana proyek berpindah dari singkat ke diluncurkan",
       "process": [
         {
-          "title": "Menemukan",
-          "description": "Menyelaraskan tujuan, pengguna, dan kendala melalui penemuan produk dan merek yang terfokus."
+          "title": "Analisis & Pelajari",
+          "description": "Selami lebih dalam ruang permasalahan, analisis kendala melalui lensa multidisiplin."
         },
         {
-          "title": "Mendefinisikan",
-          "description": "Terjemahkan temuan ke dalam arah sistem, prioritas, dan hasil yang terukur."
+          "title": "Desain & Prototipe",
+          "description": "Menyusun UI yang dapat diskalakan dan menentukan arsitektur sistem untuk eksekusi yang kuat dan bersih."
         },
         {
-          "title": "Desain + Bangun",
-          "description": "Desain dan implementasi terjadi dalam satu putaran untuk mengurangi gesekan handoff."
+          "title": "Kembangkan & Integrasikan",
+          "description": "Menulis kode yang ketat dan diketik serta mengintegrasikan API cerdas dengan rapi tanpa hambatan."
         },
         {
-          "title": "Luncurkan + Ulangi",
-          "description": "Rilis dengan cepat, pantau perilaku, dan tingkatkan dengan prioritas pasca peluncuran yang jelas."
+          "title": "Kirim & Pimpin",
+          "description": "Meluncurkan produk, mendokumentasikan prosesnya, dan mengelola pertumbuhan komunitas atau tim."
         }
       ],
       "nextProject": "Proyek Berikutnya",
-      "nextTitle": "Butuh mitra yang dapat menangani pembuatan merek, antarmuka, dan produk dalam satu aliran?",
+      "nextTitle": "Butuh mitra yang dapat menangani logika fullstack, antarmuka, dan pertumbuhan dalam satu aliran?",
       "continueToContact": "Lanjutkan menghubungi"
     },
     "about": {
@@ -422,7 +420,7 @@ export const TRANSLATIONS = {
       "location": "Asia/Jakarta",
       "profileName": "Raditya Adyatma",
       "profileRole": "Siswa di Universitas Darussalam Gontor - Pendiri 1% Pembaca",
-      "description": "Saya seorang pembangun multidisiplin yang berfokus pada kejelasan merek dan eksekusi produk. Saya membantu tim menyampaikan pengalaman yang koheren di seluruh situs web, perangkat lunak, dan seluler mulai dari strategi hingga implementasi.",
+      "description": "Saya seorang pembangun multidisiplin yang menggabungkan keahlian teknis mendalam dengan visi komunitas strategis. Sebagai pendiri 1% Readers dan mahasiswa Hukum Ekonomi Islam, saya memecahkan masalah kompleks dengan menjembatani Rekayasa Perangkat Lunak Fullstack dan Pembelajaran Mesin AI dengan logika operasional yang kuat.",
       "experienceTitle": "Pengalaman Kerja",
       "experience": [
         {
@@ -636,60 +634,59 @@ export const TRANSLATIONS = {
     },
     "home": {
       "profileTitle": "متاح للتأجير",
-      "heroHeadline": "شريكك في التطوير الرقمي",
-      "heroHighlight": "التطوير الرقمي",
-      "heroDescription": "شريك تطوير العلامة التجارية والبرمجيات: تقديم تجارب رقمية عالية الجودة بدقة وأداء. أقوم بالإنشاء للمؤسسات والشركات التي تطالب بحلول احترافية وجاهزة للمستقبل.",
+      "heroHeadline": "مؤسس وطالب ومطور متعدد التخصصات",
+      "heroHighlight": "متعدد التخصصات",
+      "heroDescription": "أحمل الوضوح الهيكلي والأنظمة الذكية إلى المنتجات الرقمية. متخصصون في ربط هندسة برمجيات Fullstack مع عمليات تكامل الذكاء الاصطناعي، مع تطبيق الرؤى الإستراتيجية من الاقتصاد والقانون على منصات المجتمع والتطبيقات القابلة للتطوير.",
       "getInTouch": "تواصل معنا",
       "metrics": {
-        "projects": "المشاريع التي تم تسليمها",
-        "disciplines": "التخصصات متكاملة",
-        "timeline": "الجدول الزمني النموذجي لـ MVP"
+        "projects": "تأسست المجتمع",
+        "disciplines": "مشاريع مفتوحة المصدر",
+        "timeline": "التخصصات التقنية"
       },
       "selectedBuilds": "بنيات المنتج المحدد",
       "trustTypes": [
-        "العلامة التجارية + الجوال",
-        "برامج الويب",
-        "العلامة التجارية + الموقع",
-        "الجوال + الخلفية",
-        "منصة LMS",
-        "المنتج الداخلي"
+        "منصة المجتمع",
+        "قاعدة المعرفة",
+        "تطبيق الإنتاجية",
+        "الوسائط التفاعلية",
+        "برامج الويب"
       ],
       "servicesTitle": "خدمات متعددة التخصصات",
       "services": [
         {
-          "title": "أنظمة العلامة التجارية",
-          "description": "اتجاه الهوية واللغة المرئية وقواعد التصميم القابلة للتطوير للحفاظ على اتساق كل نقطة اتصال للمنتج.",
+          "title": "هندسة البرمجيات",
+          "description": "بنيات Fullstack، وتكاملات الواجهة الخلفية الواضحة، وتطبيقات الواجهة الأمامية سريعة الاستجابة المصممة لتحقيق الأداء.",
           "items": [
-            "استراتيجية العلامة التجارية",
-            "الهوية البصرية",
-            "إرشادات التصميم"
+            "قدرات فولستاك",
+            "واجهة المستخدم/تجربة المستخدم التفاعلية",
+            "صيانة النظام"
           ]
         },
         {
-          "title": "تجارب الويب",
-          "description": "مواقع التسويق والمنتجات مصممة لتحقيق الأداء والتحويل والمرونة التحريرية.",
+          "title": "الذكاء الاصطناعي والتعلم الآلي",
+          "description": "دمج النماذج الذكية والرؤى المستندة إلى البيانات لتحويل الأدوات الأولية إلى منتجات أكثر ذكاءً.",
           "items": [
-            "الصفحات المقصودة",
-            "بنية نظام إدارة المحتوى",
-            "تحسين الأداء"
+            "نماذج التعلم العميق",
+            "تحليل البيانات",
+            "تكامل TensorFlow"
           ]
         },
         {
-          "title": "منتجات البرمجيات",
-          "description": "تجربة المستخدم للمنتج وبنية الواجهة الأمامية للوحات المعلومات والأدوات الداخلية ومنصات SaaS.",
+          "title": "الإدارة والقيادة",
+          "description": "قيادة فريق متعدد الوظائف وإعدادات مشروع منظمة مصممة للتسليم المتسق وعالي السرعة.",
           "items": [
-            "تدفقات تجربة المستخدم",
-            "أنظمة التصميم",
-            "تنفيذ الواجهة الأمامية"
+            "إدارة الفريق",
+            "التخطيط الاستراتيجي",
+            "التوجيه"
           ]
         },
         {
-          "title": "تطبيقات الجوال",
-          "description": "واجهات متنقلة ذات طابع أصلي مع تدفقات مهمة واضحة وحالات قوية وتعليمات برمجية قابلة للصيانة.",
+          "title": "الاقتصاد والقانون",
+          "description": "تطبيق التفكير النقدي ومبادئ التمويل الإسلامي والمنطق التشغيلي على منصات الأعمال المعقدة.",
           "items": [
-            "آي أو إس/أندرويد يو إكس",
-            "مكتبات المكونات",
-            "تكامل واجهة برمجة التطبيقات"
+            "منطق العملية",
+            "التكامل المالي",
+            "حل المشكلات التحليلية"
           ]
         }
       ],
@@ -701,24 +698,24 @@ export const TRANSLATIONS = {
       "processTitle": "كيف تنتقل المشاريع من الإيجاز إلى الإطلاق",
       "process": [
         {
-          "title": "يكتشف",
-          "description": "قم بمواءمة الأهداف والمستخدمين والقيود من خلال اكتشاف المنتج والعلامة التجارية المركزة."
+          "title": "تحليل وتعلم",
+          "description": "الغوص العميق في مساحة المشكلة، وتحليل القيود من خلال عدسة متعددة التخصصات."
         },
         {
-          "title": "يُعرِّف",
-          "description": "ترجمة النتائج إلى اتجاه النظام والأولويات والنتائج القابلة للقياس."
+          "title": "التصميم والنموذج الأولي",
+          "description": "صياغة واجهة مستخدم قابلة للتطوير وتحديد بنيات النظام لتنفيذ قوي ونظيف."
         },
         {
-          "title": "تصميم + بناء",
-          "description": "يتم التصميم والتنفيذ في حلقة واحدة لتقليل الاحتكاك أثناء عملية التسليم."
+          "title": "التطوير والتكامل",
+          "description": "كتابة تعليمات برمجية صارمة ومكتوبة ودمج واجهات برمجة التطبيقات الذكية بشكل نظيف دون احتكاك."
         },
         {
-          "title": "إطلاق + تكرار",
-          "description": "قم بالإصدار بسرعة ومراقبة السلوك والتحسين من خلال أولويات واضحة بعد الإطلاق."
+          "title": "السفينة والرصاص",
+          "description": "إطلاق المنتج وتوثيق العملية وإدارة نمو المجتمع أو الفريق."
         }
       ],
       "nextProject": "المشروع القادم",
-      "nextTitle": "هل تحتاج إلى شريك يمكنه التعامل مع بناء العلامة التجارية والواجهة والمنتج في تدفق واحد؟",
+      "nextTitle": "هل تحتاج إلى شريك يمكنه التعامل مع المنطق الكامل والواجهة والنمو في تدفق واحد؟",
       "continueToContact": "الاستمرار في الاتصال"
     },
     "about": {
@@ -726,7 +723,7 @@ export const TRANSLATIONS = {
       "location": "آسيا/جاكرتا",
       "profileName": "راديتيا أدياتما",
       "profileRole": "Siswa di Universitas Darussalam Gontor - المؤسس 1% القراء",
-      "description": "أنا منشئ متعدد التخصصات أركز على وضوح العلامة التجارية وتنفيذ المنتج. أساعد الفرق على إرسال تجارب متماسكة عبر مواقع الويب والبرامج والهواتف المحمولة بدءًا من الإستراتيجية وحتى التنفيذ.",
+      "description": "أنا منشئ متعدد التخصصات يجمع بين الخبرة التقنية العميقة والرؤية المجتمعية الإستراتيجية. باعتباري مؤسس 1% Readers وطالب في قانون الاقتصاد الإسلامي، أقوم بحل المشكلات المعقدة من خلال ربط هندسة البرمجيات Fullstack والتعلم الآلي بالذكاء الاصطناعي بمنطق تشغيلي قوي.",
       "experienceTitle": "خبرة في العمل",
       "experience": [
         {
