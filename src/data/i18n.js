@@ -88,8 +88,8 @@ export const TRANSLATIONS = {
       "featuredTitle": "Portfolio work with measurable outcomes",
       "viewAll": "View all",
       "openCaseStudy": "Open case study",
-      "processLabel": "Process",
-      "processTitle": "How projects move from brief to launch",
+      "processLabel": "Approach",
+      "processTitle": "How complex problems translate into intelligent, scalable systems",
       "process": [
         {
           "title": "Analyze & Learn",
@@ -309,9 +309,9 @@ export const TRANSLATIONS = {
   },
   "id": {
     "nav": {
-      "home": "Beranda",
-      "about": "Ihwal",
-      "services": "Layanan-Layanan",
+      "home": "Rumah",
+      "about": "Tentang",
+      "services": "Layanan",
       "contact": "Kontak",
       "language": "Bahasa",
       "selectLanguage": "Pilih Bahasa"
@@ -322,11 +322,11 @@ export const TRANSLATIONS = {
     },
     "footer": {
       "rights": "© {year} Raditya Adyatma. Semua hak dilindungi undang-undang.",
-      "about": "Ihwal",
+      "about": "Tentang",
       "work": "Bekerja",
       "contact": "Kontak",
       "linkedin": "LinkedIn",
-      "dribbble": "Menggiring bola",
+      "dribbble": "menggiring bola",
       "instagram": "Instagram"
     },
     "home": {
@@ -391,8 +391,8 @@ export const TRANSLATIONS = {
       "featuredTitle": "Portofolio bekerja dengan hasil yang terukur",
       "viewAll": "Lihat semuanya",
       "openCaseStudy": "Studi kasus terbuka",
-      "processLabel": "Proses",
-      "processTitle": "Bagaimana proyek berpindah dari singkat ke diluncurkan",
+      "processLabel": "Mendekati",
+      "processTitle": "Bagaimana permasalahan kompleks diterjemahkan ke dalam sistem yang cerdas dan terukur",
       "process": [
         {
           "title": "Analisis & Pelajari",
@@ -416,7 +416,7 @@ export const TRANSLATIONS = {
       "continueToContact": "Lanjutkan menghubungi"
     },
     "about": {
-      "badge": "Ihwal",
+      "badge": "Tentang",
       "location": "Asia/Jakarta",
       "profileName": "Raditya Adyatma",
       "profileRole": "Pendiri. Murid. Pengembang Multidisiplin.",
@@ -553,7 +553,7 @@ export const TRANSLATIONS = {
       "badge": "Studi Kasus",
       "category": "Kategori",
       "industry": "Industri",
-      "timeline": "Garis waktu",
+      "timeline": "Garis Waktu",
       "role": "Peran",
       "challenge": "Tantangan",
       "approach": "Mendekati",
@@ -569,7 +569,7 @@ export const TRANSLATIONS = {
     },
     "contact": {
       "badge": "Kontak",
-      "headline": "Ayo buat produk Anda berikutnya.",
+      "headline": "Ayo buat produk Anda selanjutnya.",
       "description": "Bagikan sasaran produk, linimasa, dan tantangan Anda saat ini. Saya dapat mendukung strategi, desain, dan implementasi secara menyeluruh.",
       "emailTitle": "E-mail",
       "emailDescription": "Terbaik untuk lingkup dan persyaratan proyek.",
@@ -589,7 +589,7 @@ export const TRANSLATIONS = {
         "email": "E-mail",
         "projectType": "Jenis Proyek",
         "budget": "Anggaran",
-        "timeline": "Garis waktu",
+        "timeline": "Garis Waktu",
         "projectBrief": "Ringkasan Proyek",
         "placeholderName": "Namamu",
         "placeholderEmail": "kamu@email.com",
@@ -694,8 +694,8 @@ export const TRANSLATIONS = {
       "featuredTitle": "عمل المحفظة بنتائج قابلة للقياس",
       "viewAll": "عرض الكل",
       "openCaseStudy": "دراسة حالة مفتوحة",
-      "processLabel": "عملية",
-      "processTitle": "كيف تنتقل المشاريع من الإيجاز إلى الإطلاق",
+      "processLabel": "يقترب",
+      "processTitle": "كيف تترجم المشاكل المعقدة إلى أنظمة ذكية وقابلة للتطوير",
       "process": [
         {
           "title": "تحليل وتعلم",
