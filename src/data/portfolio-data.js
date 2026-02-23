@@ -2,9 +2,9 @@ export const PROFILE = {
   name: "Raditya Adyatma",
   handle: "RADS",
   title: "Available for hire",
-  heroHeadline: "Founder, Student, and Multidisciplinary Developer",
+  heroHeadline: "Founder. Student. Multidisciplinary Developer.",
   heroDescription:
-    "I bring structural clarity and intelligent systems to digital products. Specializing in bridging Fullstack Software Engineering with AI integrations, while applying strategic insights from Economics & Law to community platforms and scalable apps.",
+    "I design and build digital products with structural clarity — combining fullstack engineering, AI integrations, and strategic thinking from economics & law.",
   location: "Asia/Jakarta",
   availability: "Available for collaborations"
 };

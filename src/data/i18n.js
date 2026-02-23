@@ -28,9 +28,9 @@ export const TRANSLATIONS = {
     },
     "home": {
       "profileTitle": "Available For Hire",
-      "heroHeadline": "Founder, Student, and Multidisciplinary Developer",
+      "heroHeadline": "Founder. Student. Multidisciplinary Developer.",
       "heroHighlight": "Multidisciplinary",
-      "heroDescription": "I bring structural clarity and intelligent systems to digital products. Specializing in bridging Fullstack Software Engineering with AI integrations, while applying strategic insights from Economics & Law to community platforms and scalable apps.",
+      "heroDescription": "I design and build digital products with structural clarity — combining fullstack engineering, AI integrations, and strategic thinking from economics & law.",
       "getInTouch": "Get in touch",
       "metrics": {
         "projects": "Community Founded",
@@ -331,9 +331,9 @@ export const TRANSLATIONS = {
     },
     "home": {
       "profileTitle": "Tersedia Untuk Disewa",
-      "heroHeadline": "Pendiri, Mahasiswa, dan Pengembang Multidisiplin",
+      "heroHeadline": "Pendiri. Murid. Pengembang Multidisiplin.",
       "heroHighlight": "Multidisiplin",
-      "heroDescription": "Saya menghadirkan kejelasan struktural dan sistem cerdas pada produk digital. Mengkhususkan diri dalam menjembatani Rekayasa Perangkat Lunak Fullstack dengan integrasi AI, sambil menerapkan wawasan strategis dari Ekonomi & Hukum ke platform komunitas dan aplikasi yang skalabel.",
+      "heroDescription": "Saya merancang dan membangun produk digital dengan struktur yang jelas — menggabungkan rekayasa fullstack, integrasi AI, dan pemikiran strategis dari bidang ekonomi & hukum.",
       "getInTouch": "Hubungi kami",
       "metrics": {
         "projects": "Komunitas Didirikan",
@@ -634,9 +634,9 @@ export const TRANSLATIONS = {
     },
     "home": {
       "profileTitle": "متاح للتأجير",
-      "heroHeadline": "مؤسس وطالب ومطور متعدد التخصصات",
+      "heroHeadline": "مؤسس. طالب. مطور متعدد التخصصات.",
       "heroHighlight": "متعدد التخصصات",
-      "heroDescription": "أحمل الوضوح الهيكلي والأنظمة الذكية إلى المنتجات الرقمية. متخصصون في ربط هندسة برمجيات Fullstack مع عمليات تكامل الذكاء الاصطناعي، مع تطبيق الرؤى الإستراتيجية من الاقتصاد والقانون على منصات المجتمع والتطبيقات القابلة للتطوير.",
+      "heroDescription": "أقوم بتصميم وإنشاء منتجات رقمية بوضوح هيكلي - تجمع بين الهندسة الكاملة وتكاملات الذكاء الاصطناعي والتفكير الاستراتيجي من الاقتصاد والقانون.",
       "getInTouch": "تواصل معنا",
       "metrics": {
         "projects": "تأسست المجتمع",
