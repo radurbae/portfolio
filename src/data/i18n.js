@@ -180,41 +180,62 @@ export const TRANSLATIONS = {
       "skillsTitle": "Technical Skills",
       "skillsGroups": [
         {
-          "name": "Core Skills",
+          "name": "Software Engineering",
           "items": [
-            "Product Strategy",
-            "UI/UX Design",
-            "Fullstack Development",
-            "API Integration",
-            "Mobile Delivery"
-          ]
-        },
-        {
-          "name": "AI & Machine Learning",
-          "items": [
-            "Machine Learning",
-            "Deep Learning",
-            "TensorFlow"
-          ]
-        },
-        {
-          "name": "Frameworks & Libraries",
-          "items": [
-            "Astro",
-            "React",
-            "Next.js",
-            "React Native",
-            "Tailwind CSS"
-          ]
-        },
-        {
-          "name": "Languages & Tools",
-          "items": [
-            "TypeScript",
+            "Front-End Development",
+            "Web Development",
             "JavaScript",
-            "SQL",
+            "TypeScript",
+            "HTML",
+            "CSS",
+            "Git",
+            "GitHub",
+            "Software Maintenance",
+            "Code Design"
+          ]
+        },
+        {
+          "name": "UI/UX & Design",
+          "items": [
+            "User Experience (UX)",
+            "User Interface Design",
+            "Graphic Design",
+            "Web Design",
             "Figma",
-            "GitHub"
+            "CorelDRAW"
+          ]
+        },
+        {
+          "name": "Management & Leadership",
+          "items": [
+            "Team Management",
+            "Leadership",
+            "Cross-functional Team Leadership",
+            "Event Management",
+            "Human Resource Development",
+            "Coaching & Mentoring"
+          ]
+        },
+        {
+          "name": "Economics & Law",
+          "items": [
+            "Islamic Finance",
+            "Financial Law",
+            "International Economic Law",
+            "Religious Economics",
+            "Banking",
+            "Accounting"
+          ]
+        },
+        {
+          "name": "Soft Skills",
+          "items": [
+            "Public Speaking",
+            "Problem Solving",
+            "Critical Thinking",
+            "Data Analysis",
+            "Conflict Resolution",
+            "Research Skills"
           ]
         }
       ]
@@ -463,41 +484,62 @@ export const TRANSLATIONS = {
       "skillsTitle": "Keterampilan Teknis",
       "skillsGroups": [
         {
-          "name": "Keterampilan Inti",
+          "name": "Rekayasa Perangkat Lunak",
           "items": [
-            "Strategi Produk",
-            "Desain UI/UX",
-            "Pengembangan tumpukan penuh",
-            "Integrasi API",
-            "Pengiriman Seluler"
-          ]
-        },
-        {
-          "name": "AI & Pembelajaran Mesin",
-          "items": [
-            "Pembelajaran Mesin",
-            "Pembelajaran Mendalam",
-            "Aliran Tensor"
-          ]
-        },
-        {
-          "name": "Kerangka & Perpustakaan",
-          "items": [
-            "Astro",
-            "Bereaksi",
-            "Berikutnya.js",
-            "Bereaksi Asli",
-            "CSS penarik"
-          ]
-        },
-        {
-          "name": "Bahasa & Alat",
-          "items": [
-            "skrip ketikan",
+            "Pengembangan Front-End",
+            "Pengembangan Web",
             "JavaScript",
-            "SQL",
+            "skrip ketikan",
+            "HTML",
+            "CSS",
+            "Git",
+            "GitHub",
+            "Pemeliharaan Perangkat Lunak",
+            "Desain Kode"
+          ]
+        },
+        {
+          "name": "UI/UX & Desain",
+          "items": [
+            "Pengalaman Pengguna (UX)",
+            "Desain Antarmuka Pengguna",
+            "Desain Grafis",
+            "Desain Web",
             "Gambar",
-            "GitHub"
+            "CorelDRAW"
+          ]
+        },
+        {
+          "name": "Manajemen & Kepemimpinan",
+          "items": [
+            "Manajemen Tim",
+            "Kepemimpinan",
+            "Kepemimpinan Tim Lintas Fungsi",
+            "Manajemen Acara",
+            "Pengembangan sumber daya manusia",
+            "Pembinaan & Pendampingan"
+          ]
+        },
+        {
+          "name": "Ekonomi & Hukum",
+          "items": [
+            "Keuangan Islam",
+            "Hukum Keuangan",
+            "Hukum Ekonomi Internasional",
+            "Ekonomi Keagamaan",
+            "Perbankan",
+            "Akuntansi"
+          ]
+        },
+        {
+          "name": "Keterampilan Lunak",
+          "items": [
+            "Berbicara di Depan Umum",
+            "Pemecahan Masalah",
+            "Berpikir Kritis",
+            "Analisis Data",
+            "Resolusi Konflik",
+            "Keterampilan Penelitian"
           ]
         }
       ]
@@ -746,41 +788,62 @@ export const TRANSLATIONS = {
       "skillsTitle": "المهارات الفنية",
       "skillsGroups": [
         {
-          "name": "المهارات الأساسية",
+          "name": "هندسة البرمجيات",
           "items": [
-            "استراتيجية المنتج",
-            "تصميم واجهة المستخدم/تجربة المستخدم",
-            "تطوير المكدس الكامل",
-            "تكامل واجهة برمجة التطبيقات",
-            "تسليم المحمول"
-          ]
-        },
-        {
-          "name": "الذكاء الاصطناعي والتعلم الآلي",
-          "items": [
-            "التعلم الآلي",
-            "التعلم العميق",
-            "TensorFlow"
-          ]
-        },
-        {
-          "name": "الأطر والمكتبات",
-          "items": [
-            "استرو",
-            "رد فعل",
-            "Next.js",
-            "رد الفعل الأصلي",
-            "الريح الخلفية CSS"
-          ]
-        },
-        {
-          "name": "اللغات والأدوات",
-          "items": [
-            "تايب سكريبت",
+            "تطوير الواجهة الأمامية",
+            "تطوير الويب",
             "جافا سكريبت",
-            "SQL",
+            "تايب سكريبت",
+            "HTML",
+            "CSS",
+            "بوابة",
+            "جيثب",
+            "صيانة البرمجيات",
+            "تصميم الكود"
+          ]
+        },
+        {
+          "name": "واجهة المستخدم/تجربة المستخدم والتصميم",
+          "items": [
+            "تجربة المستخدم (UX)",
+            "تصميم واجهة المستخدم",
+            "التصميم الجرافيكي",
+            "تصميم الويب",
             "فيجما",
-            "جيثب"
+            "برنامج كوريل درو"
+          ]
+        },
+        {
+          "name": "الإدارة والقيادة",
+          "items": [
+            "إدارة الفريق",
+            "قيادة",
+            "قيادة الفريق متعددة الوظائف",
+            "إدارة الأحداث",
+            "تنمية الموارد البشرية",
+            "التدريب والتوجيه"
+          ]
+        },
+        {
+          "name": "الاقتصاد والقانون",
+          "items": [
+            "التمويل الإسلامي",
+            "القانون المالي",
+            "القانون الاقتصادي الدولي",
+            "الاقتصاد الديني",
+            "الخدمات المصرفية",
+            "محاسبة"
+          ]
+        },
+        {
+          "name": "المهارات الناعمة",
+          "items": [
+            "التحدث أمام الجمهور",
+            "حل المشكلات",
+            "التفكير النقدي",
+            "تحليل البيانات",
+            "حل الصراعات",
+            "مهارات البحث"
           ]
         }
       ]
