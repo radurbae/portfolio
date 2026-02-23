@@ -178,40 +178,6 @@ export const CASE_STUDIES = [
     updatedAt: "2025-11-15"
   },
   {
-    slug: "x-barn",
-    title: "X-Barn",
-    tagline: "A high-performance experimental project site.",
-    summary:
-      "An experimental web project leveraging Astro to achieve maximal performance and minimal JavaScript payload.",
-    category: "Experimental Web",
-    industry: "Technology",
-    timeline: "3 weeks",
-    year: "2025",
-    role: "Frontend Engineer",
-    challenge:
-      "Pushing the limits of web performance by building complex layouts with zero client-side JavaScript where possible.",
-    approach: [
-      "Utilized Astro's island architecture to selectively hydrate interactive components.",
-      "Built the styling structure meticulously to avoid layout shifts and optimize rendering paths.",
-      "Audited and stripped down unnecessary dependencies."
-    ],
-    deliverables: [
-      "Static Site Generation Setup",
-      "Performance Audit Report",
-      "Astro Component Library"
-    ],
-    outcomes: [
-      { label: "Lighthouse Score", value: "100/100", detail: "Achieved perfect scores across performance, accessibility, and SEO." },
-      { label: "Bundle Size", value: "Minimal", detail: "Reduced initial payload significantly compared to traditional SPAs." }
-    ],
-    stack: ["Astro", "Tailwind CSS", "JavaScript"],
-    links: {
-      live: "#",
-      repository: "https://github.com/radurbae/x-barn"
-    },
-    updatedAt: "2025-10-10"
-  },
-  {
     slug: "valentine",
     title: "Valentine",
     tagline: "A purely interactive digital experience.",
