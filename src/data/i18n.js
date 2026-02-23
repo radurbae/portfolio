@@ -88,8 +88,8 @@ export const TRANSLATIONS = {
       "featuredTitle": "Portfolio work with measurable outcomes",
       "viewAll": "View all",
       "openCaseStudy": "Open case study",
-      "processLabel": "Approach",
-      "processTitle": "How complex problems translate into intelligent, scalable systems",
+      "processLabel": "Methodology",
+      "processTitle": "How creative problem-solving and critical thinking drive product execution",
       "process": [
         {
           "title": "Analyze & Learn",
@@ -391,8 +391,8 @@ export const TRANSLATIONS = {
       "featuredTitle": "Portofolio bekerja dengan hasil yang terukur",
       "viewAll": "Lihat semuanya",
       "openCaseStudy": "Studi kasus terbuka",
-      "processLabel": "Mendekati",
-      "processTitle": "Bagaimana permasalahan kompleks diterjemahkan ke dalam sistem yang cerdas dan terukur",
+      "processLabel": "Metodologi",
+      "processTitle": "Bagaimana pemecahan masalah yang kreatif dan pemikiran kritis mendorong eksekusi produk",
       "process": [
         {
           "title": "Analisis & Pelajari",
@@ -694,8 +694,8 @@ export const TRANSLATIONS = {
       "featuredTitle": "عمل المحفظة بنتائج قابلة للقياس",
       "viewAll": "عرض الكل",
       "openCaseStudy": "دراسة حالة مفتوحة",
-      "processLabel": "يقترب",
-      "processTitle": "كيف تترجم المشاكل المعقدة إلى أنظمة ذكية وقابلة للتطوير",
+      "processLabel": "المنهجية",
+      "processTitle": "كيف يؤدي حل المشكلات الإبداعي والتفكير النقدي إلى دفع تنفيذ المنتج",
       "process": [
         {
           "title": "تحليل وتعلم",
