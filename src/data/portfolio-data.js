@@ -6,7 +6,7 @@ export const PROFILE = {
   heroDescription:
     "I help founders and teams launch clear brand-led experiences across web, software, and mobile. From positioning and UI to production code, everything stays coherent from first click to release.",
   location: "Asia/Jakarta",
-  availability: "Available for Q2 2026 collaborations"
+  availability: "Available for collaborations"
 };
 
 export const TRUST_ITEMS = [
@@ -76,189 +76,208 @@ export const SNAPSHOT_METRICS = [
 
 export const CASE_STUDIES = [
   {
-    slug: "atlaspay-brand-mobile",
-    title: "AtlasPay Brand and Mobile Experience",
-    tagline: "Fintech product refresh across identity, UX, and app delivery.",
+    slug: "1percentreaders",
+    title: "1% Readers (1percentreaders)",
+    tagline: "A digital space for an evolving book club community.",
     summary:
-      "Repositioned AtlasPay with a simpler trust-first brand and redesigned onboarding for a faster first transaction.",
-    category: "Brand + Mobile",
-    industry: "Fintech",
-    timeline: "10 weeks",
+      "A platform built to support the 1% Readers community, focusing on content delivery and shared reading perspectives.",
+    category: "Community Platform",
+    industry: "Publishing / Education",
+    timeline: "Ongoing",
+    year: "2026",
+    role: "Lead Developer",
+    challenge:
+      "Translating the physical concept of a book club where 'readers need listeners' into a digital platform that facilitates meaningful interaction.",
+    approach: [
+      "Conceptualized the core architecture based on user engagement.",
+      "Developed the frontend using TypeScript for strict type safety and better maintainability.",
+      "Integrated scalable backend patterns to support future community features."
+    ],
+    deliverables: [
+      "Web Platform Architecture",
+      "TypeScript Frontend Implementation",
+      "Community Feature Set Strategy"
+    ],
+    outcomes: [
+      { label: "Community Base", value: "Active", detail: "Serving the foundational members of the 1% Readers club." },
+      { label: "Code Quality", value: "High", detail: "Strict TypeScript implementation ensuring robust performance." }
+    ],
+    stack: ["TypeScript", "Node.js", "React"],
+    links: {
+      live: "#",
+      repository: "https://github.com/radurbae/1percentreaders"
+    },
+    updatedAt: "2026-02-23"
+  },
+  {
+    slug: "til",
+    title: "Today I Learned (til)",
+    tagline: "A personal knowledge base and learning tracker.",
+    summary:
+      "An open-source repository dedicated to documenting daily learnings, code snippets, and technical discoveries.",
+    category: "Open Source / Knowledge Base",
+    industry: "Software Engineering",
+    timeline: "Ongoing",
+    year: "2026",
+    role: "Sole Contributor",
+    challenge:
+      "Maintain a consistent habit of documenting technical learnings effectively without slowing down the development process.",
+    approach: [
+      "Set up a lightweight repository structure geared toward quick Markdown-based entries.",
+      "Used TypeScript to build custom tools for indexing and searching the entries.",
+      "Ensured a frictionless workflow to encourage daily contributions."
+    ],
+    deliverables: [
+      "Knowledge Base Repository",
+      "Markdown Entry System",
+      "TypeScript Tooling"
+    ],
+    outcomes: [
+      { label: "Entries", value: "Growing", detail: "A continually expanding resource of technical knowledge." },
+      { label: "Habit Formation", value: "Success", detail: "Established a consistent learning documentation routine." }
+    ],
+    stack: ["TypeScript", "Markdown"],
+    links: {
+      live: "#",
+      repository: "https://github.com/radurbae/til"
+    },
+    updatedAt: "2026-02-23"
+  },
+  {
+    slug: "onepercent",
+    title: "One Percent",
+    tagline: "Micro-improvements tracked systematically.",
+    summary:
+      "An application focused on tracking small, incremental improvements over time, built with modern web technologies.",
+    category: "Productivity Application",
+    industry: "Self-Improvement",
+    timeline: "4 weeks",
     year: "2025",
-    role: "Lead Brand Designer, Product Designer, Frontend Developer",
+    role: "Fullstack Developer",
     challenge:
-      "The existing app had strong features but low first-week activation because the brand felt generic and onboarding was too complex.",
+      "Designing an interface that motivates users to record 1% improvements daily without overwhelming them with data.",
     approach: [
-      "Mapped drop-off points in onboarding and payment setup.",
-      "Built a clearer brand system focused on trust and speed.",
-      "Redesigned onboarding and transaction flows with fewer decisions per screen.",
-      "Implemented reusable components for consistent product rollout."
+      "Focused on a minimalist, distraction-free UI design.",
+      "Implemented a fast, responsive frontend using TypeScript to handle state management cleanly.",
+      "Optimized the data structure for quick daily entries and long-term trend visualization."
     ],
     deliverables: [
-      "Brand identity kit",
-      "Onboarding redesign",
-      "Mobile UI component library",
-      "Landing page refresh"
+      "Application Prototype",
+      "Core Tracking Features",
+      "Responsive UI"
     ],
     outcomes: [
-      { label: "Activation Rate", value: "+37%", detail: "Improved first-week activation after launch." },
-      { label: "Onboarding Time", value: "-41%", detail: "Reduced completion time from account creation to first transfer." },
-      { label: "Design Consistency", value: "92%", detail: "Internal design QA score after system rollout." }
+      { label: "User Engagement", value: "Daily", detail: "Designed for high-frequency, low-friction interaction." },
+      { label: "Performance", value: "Fast", detail: "Optimized for quick load times and instant feedback." }
     ],
-    stack: ["React Native", "TypeScript", "Figma", "Firebase", "Node.js"],
+    stack: ["TypeScript", "React", "Next.js"],
     links: {
       live: "#",
-      repository: "#"
+      repository: "https://github.com/radurbae/onepercent"
     },
-    updatedAt: "2025-12-10"
+    updatedAt: "2025-11-15"
   },
   {
-    slug: "mitrapos-saas-platform",
-    title: "MitraPOS SaaS Platform",
-    tagline: "From fragmented admin tools to a single operations dashboard.",
+    slug: "x-barn",
+    title: "X-Barn",
+    tagline: "A high-performance experimental project site.",
     summary:
-      "Designed and developed a modular POS management platform that connects inventory, outlet performance, and team operations.",
-    category: "Web Software",
-    industry: "Retail Tech",
-    timeline: "12 weeks",
+      "An experimental web project leveraging Astro to achieve maximal performance and minimal JavaScript payload.",
+    category: "Experimental Web",
+    industry: "Technology",
+    timeline: "3 weeks",
     year: "2025",
-    role: "Product Designer, Frontend Engineer",
+    role: "Frontend Engineer",
     challenge:
-      "Store operations were spread across spreadsheets and disconnected tools, causing slow reporting and high manual overhead.",
+      "Pushing the limits of web performance by building complex layouts with zero client-side JavaScript where possible.",
     approach: [
-      "Audited operational workflows across cashier, manager, and owner roles.",
-      "Structured dashboard IA around daily operational tasks instead of feature silos.",
-      "Built a scalable UI foundation to support new modules without visual drift.",
-      "Integrated analytics summaries for outlet-level decision making."
+      "Utilized Astro's island architecture to selectively hydrate interactive components.",
+      "Built the styling structure meticulously to avoid layout shifts and optimize rendering paths.",
+      "Audited and stripped down unnecessary dependencies."
     ],
     deliverables: [
-      "SaaS dashboard UX",
-      "Design token system",
-      "Role-based interface states",
-      "Reporting and insights module"
+      "Static Site Generation Setup",
+      "Performance Audit Report",
+      "Astro Component Library"
     ],
     outcomes: [
-      { label: "Report Generation", value: "3x faster", detail: "Average reporting workflow reduced to under 2 minutes." },
-      { label: "Operator Error", value: "-28%", detail: "Fewer action mistakes after task-first interface changes." },
-      { label: "Admin Adoption", value: "+46%", detail: "Weekly active admin users increased after migration." }
+      { label: "Lighthouse Score", value: "100/100", detail: "Achieved perfect scores across performance, accessibility, and SEO." },
+      { label: "Bundle Size", value: "Minimal", detail: "Reduced initial payload significantly compared to traditional SPAs." }
     ],
-    stack: ["Next.js", "Tailwind CSS", "TypeScript", "PostgreSQL", "Prisma"],
+    stack: ["Astro", "Tailwind CSS", "JavaScript"],
     links: {
       live: "#",
-      repository: "#"
+      repository: "https://github.com/radurbae/x-barn"
     },
-    updatedAt: "2025-11-24"
+    updatedAt: "2025-10-10"
   },
   {
-    slug: "noura-health-digital-rebrand",
-    title: "Noura Health Digital Rebrand",
-    tagline: "A calm, credible healthcare brand translated into a high-converting website.",
+    slug: "valentine",
+    title: "Valentine",
+    tagline: "A purely interactive digital experience.",
     summary:
-      "Delivered a complete digital rebrand and website rebuild to improve clarity, trust, and patient conversion.",
-    category: "Brand + Website",
-    industry: "Healthcare",
-    timeline: "8 weeks",
+      "A creative, interactive web experience built to deliver a specific, engaging user journey.",
+    category: "Interactive Media",
+    industry: "Entertainment",
+    timeline: "1 week",
+    year: "2025",
+    role: "Creative Developer",
+    challenge:
+      "Creating an emotionally resonant, smooth animation-driven experience that works flawlessly across all mobile devices.",
+    approach: [
+      "Prioritized CSS animations and minimal JavaScript for fluid 60fps performance.",
+      "Focused heavily on mobile layout constraints and touch interactions.",
+      "Iterated rapidly on visual feedback to perfect the user emotional journey."
+    ],
+    deliverables: [
+      "Interactive Concept",
+      "Animation implementation",
+      "Cross-device testing"
+    ],
+    outcomes: [
+      { label: "Engagement", value: "High", detail: "Designed specifically to capture and hold user attention." },
+      { label: "Performance", value: "60fps", detail: "Maintained smooth animations on lower-end mobile devices." }
+    ],
+    stack: ["HTML", "CSS", "JavaScript"],
+    links: {
+      live: "#",
+      repository: "https://github.com/radurbae/valentine"
+    },
+    updatedAt: "2025-02-14"
+  },
+  {
+    slug: "modern-pos",
+    title: "Modern POS",
+    tagline: "A conceptual point-of-sale interface design.",
+    summary:
+      "An exploration into modernizing Point of Sale systems with focus on speed, clarity, and touch optimization.",
+    category: "UX Concept / Web Software",
+    industry: "Retail SaaS",
+    timeline: "5 weeks",
     year: "2024",
-    role: "Brand Designer, UI Designer, Web Developer",
+    role: "UI/UX Developer",
     challenge:
-      "The previous brand lacked distinction and the website structure made service discovery difficult for first-time visitors.",
+      "Traditional POS systems are often cluttered and slow. The challenge was to design an interface that reduces cognitive load for cashiers in high-pressure environments.",
     approach: [
-      "Defined a tone and visual system centered on clarity and confidence.",
-      "Rebuilt information architecture around patient intent and appointment flow.",
-      "Designed responsive templates for services, doctors, and educational content.",
-      "Improved speed and readability across mobile and desktop."
+      "Conducted heuristic evaluations of existing POS interfaces.",
+      "Designed a touch-first grid system for rapid item selection.",
+      "Prototyped critical workflows like order modification and payment processing to minimize taps."
     ],
     deliverables: [
-      "Brand identity refresh",
-      "Website IA and UX",
-      "Responsive design system",
-      "CMS-ready component templates"
+      "UI Prototype",
+      "Component Architecture",
+      "Interaction Guidelines"
     ],
     outcomes: [
-      { label: "Conversion Rate", value: "+29%", detail: "Appointment conversion increased after launch." },
-      { label: "Bounce Rate", value: "-22%", detail: "Lower drop-off on service detail pages." },
-      { label: "Performance", value: "95/100", detail: "Lighthouse performance score on key templates." }
+      { label: "Task Efficiency", value: "Improved", detail: "Reduced the number of interactions required for an average transaction." },
+      { label: "Design System", value: "Scalable", detail: "Created a foundational structure that can adapt to different retail sectors." }
     ],
-    stack: ["Next.js", "Sanity CMS", "Tailwind CSS", "Vercel"],
+    stack: ["JavaScript", "CSS Frameworks", "Design Tools"],
     links: {
       live: "#",
-      repository: "#"
+      repository: "https://github.com/radurbae/modern-pos"
     },
-    updatedAt: "2024-09-17"
-  },
-  {
-    slug: "routeops-field-mobile-suite",
-    title: "RouteOps Field Mobile Suite",
-    tagline: "Task orchestration app for distributed field teams.",
-    summary:
-      "Created a mobile-first field operations suite to streamline assignment, status tracking, and proof-of-work capture.",
-    category: "Mobile + Software",
-    industry: "Logistics",
-    timeline: "14 weeks",
-    year: "2024",
-    role: "Product Designer, Mobile Developer",
-    challenge:
-      "Field agents relied on chat threads for task updates, causing delayed reporting and poor accountability.",
-    approach: [
-      "Modeled the full task lifecycle from assignment to completion evidence.",
-      "Designed low-friction offline-ready input patterns for field constraints.",
-      "Implemented clear state transitions for dispatchers and supervisors.",
-      "Added dashboard visibility for route performance and blocked tasks."
-    ],
-    deliverables: [
-      "Mobile workflow UX",
-      "Task lifecycle architecture",
-      "Supervisor dashboard",
-      "Offline interaction patterns"
-    ],
-    outcomes: [
-      { label: "Task Completion Visibility", value: "+58%", detail: "More tasks tracked end-to-end with proof of work." },
-      { label: "Dispatch Response", value: "-33%", detail: "Faster reassignment when blockers occur." },
-      { label: "Daily Throughput", value: "+21%", detail: "More completed tasks per field agent per day." }
-    ],
-    stack: ["React Native", "Expo", "Supabase", "TypeScript", "Mapbox"],
-    links: {
-      live: "#",
-      repository: "#"
-    },
-    updatedAt: "2024-07-03"
-  },
-  {
-    slug: "edustack-learning-platform",
-    title: "EduStack Learning Platform MVP",
-    tagline: "Brand-to-product execution for a modern learning platform.",
-    summary:
-      "Built an MVP learning platform with a distinctive brand, structured course experience, and scalable product UI.",
-    category: "Brand + Web Software",
-    industry: "Education",
-    timeline: "9 weeks",
-    year: "2023",
-    role: "Brand Strategist, UI Engineer",
-    challenge:
-      "The startup needed a clear market identity and a launch-ready product in one cycle with limited resources.",
-    approach: [
-      "Developed a clear brand narrative and visual toolkit for target learners.",
-      "Prioritized core student and mentor journeys for MVP scope.",
-      "Built reusable UI patterns to speed up iteration after launch.",
-      "Set up a practical handoff process between product and marketing."
-    ],
-    deliverables: [
-      "Brand narrative and visuals",
-      "MVP UX architecture",
-      "Design system foundation",
-      "Launch website and product shell"
-    ],
-    outcomes: [
-      { label: "MVP Launch Window", value: "9 weeks", detail: "Shipped on planned timeline with core flows complete." },
-      { label: "Early Retention", value: "+24%", detail: "Retention uplift in first cohort compared to pre-launch benchmark." },
-      { label: "Team Velocity", value: "+31%", detail: "Faster release cadence after adopting shared UI patterns." }
-    ],
-    stack: ["Next.js", "Tailwind CSS", "Node.js", "PostgreSQL", "Figma"],
-    links: {
-      live: "#",
-      repository: "#"
-    },
-    updatedAt: "2023-11-11"
+    updatedAt: "2024-11-20"
   }
 ];
 

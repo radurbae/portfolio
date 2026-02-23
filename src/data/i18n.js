@@ -9,7 +9,7 @@ export const TRANSLATIONS = {
       "home": "Home",
       "about": "About",
       "services": "Services",
-      "contact": "Contact Us",
+      "contact": "Contact",
       "language": "Language",
       "selectLanguage": "Select Language"
     },
@@ -30,7 +30,7 @@ export const TRANSLATIONS = {
       "profileTitle": "Available For Hire",
       "heroHeadline": "YOUR DIGITAL DEVELOPMENT PARTNER",
       "heroHighlight": "Digital Development",
-      "heroDescription": "Brand & Software Development Partner: Delivering high-quality digital experiences with precision and performance. Rads Dev is built for organizations and businesses who demand professional, future-ready solutions.",
+      "heroDescription": "Brand & Software Development Partner: Delivering high-quality digital experiences with precision and performance. I build for organizations and businesses who demand professional, future-ready solutions.",
       "getInTouch": "Get in touch",
       "metrics": {
         "projects": "Projects Delivered",
@@ -116,64 +116,95 @@ export const TRANSLATIONS = {
     "about": {
       "badge": "About",
       "location": "Asia/Jakarta",
-      "profileName": "Raditya Adyatma (RADS)",
-      "profileRole": "Brand Designer and Fullstack Developer",
+      "profileName": "Raditya Adyatma",
+      "profileRole": "Siswa di Universitas Darussalam Gontor - Founder 1% Readers",
       "description": "I am a multidisciplinary builder focused on brand clarity and product execution. I help teams ship coherent experiences across website, software, and mobile from strategy to implementation.",
       "experienceTitle": "Work Experience",
       "experience": [
         {
-          "company": "Rads Dev",
-          "role": "Brand Designer and Fullstack Developer",
-          "type": "Independent",
-          "period": "2022 - Present",
-          "summary": "Delivering brand systems and production-ready digital products across website, software, and mobile projects."
+          "company": "1% Readers - Book Club",
+          "role": "Founder",
+          "type": "Community",
+          "period": "Feb 2026 - Present",
+          "summary": "A book club founded on the belief that \"readers need listeners,\" emphasizing that reading is not just an individual activity but a process of dialogue and shared perspectives."
         },
         {
-          "company": "Client Collaborations",
-          "role": "Product and Interface Builder",
-          "type": "Project-Based",
-          "period": "2020 - 2022",
-          "summary": "Worked with teams to ship clean brand-led interfaces, from product strategy to frontend implementation."
+          "company": "Guidance and Counseling Department – PMDG Campus 5",
+          "role": "Guidance Counselor",
+          "type": "Full-Time",
+          "period": "Jun 2024 - Feb 2026",
+          "summary": "Guidance Counselor at PMDG Campus 5."
+        },
+        {
+          "company": "Guidance and Counseling Department Staff (Magelang, Central Java)",
+          "role": "Secretary",
+          "type": "Full-Time",
+          "period": "Aug 2023 - Feb 2026",
+          "summary": "Secretary at Guidance and Counseling Department Staff."
+        },
+        {
+          "company": "Blaze Volleyball Club (Magelang, Central Java)",
+          "role": "Supervisor",
+          "type": "Part-Time",
+          "period": "Jul 2023 - Feb 2026",
+          "summary": "Supervisor at Blaze Volleyball Club."
+        },
+        {
+          "company": "Darul Qiyam Computer Center (DQCC) – PMDG Campus 5",
+          "role": "Education Professional",
+          "type": "Full-Time",
+          "period": "Jun 2023 - Jun 2024",
+          "summary": "Focused on mentoring students in computer skills and digital literacy."
+        },
+        {
+          "company": "Student Organization of Pondok Modern (OPPM) (Magelang, Central Java)",
+          "role": "Manager",
+          "type": "Full-Time",
+          "period": "Jul 2022 - Jul 2023",
+          "summary": "Manager at Student Organization of Pondok Modern (OPPM)."
         }
       ],
       "educationTitle": "Education",
       "education": [
         {
-          "institution": "Universitas Negeri Jakarta",
-          "detail": "Informatics and software-focused studies with project-based product development.",
-          "period": "2019 - 2023"
+          "institution": "Universitas Darussalam Gontor",
+          "detail": "Student",
+          "period": "2023 - 2027"
+        },
+        {
+          "institution": "Pondok Modern Darussalam Gontor",
+          "detail": "Student",
+          "period": "2020 - 2023"
         }
       ],
       "skillsTitle": "Technical Skills",
       "skillsGroups": [
         {
-          "name": "Languages",
+          "name": "Core Skills",
           "items": [
-            "JavaScript",
-            "TypeScript",
-            "HTML",
-            "CSS",
-            "SQL"
+            "Product Strategy",
+            "UI/UX Design",
+            "Fullstack Development",
+            "Brand Systems"
           ]
         },
         {
-          "name": "Frameworks",
+          "name": "Frameworks & Libraries",
           "items": [
             "Astro",
             "React",
             "Next.js",
-            "Tailwind CSS",
-            "Node.js"
+            "Tailwind CSS"
           ]
         },
         {
-          "name": "Tools",
+          "name": "Languages & Tools",
           "items": [
+            "TypeScript",
+            "JavaScript",
+            "SQL",
             "Figma",
-            "GitHub",
-            "VS Code",
-            "Postman",
-            "Supabase"
+            "GitHub"
           ]
         }
       ]
@@ -249,485 +280,547 @@ export const TRANSLATIONS = {
   "id": {
     "nav": {
       "home": "Beranda",
-      "about": "Tentang",
-      "services": "Layanan",
-      "contact": "Hubungi",
+      "about": "Ihwal",
+      "services": "Layanan-Layanan",
+      "contact": "Kontak",
       "language": "Bahasa",
       "selectLanguage": "Pilih Bahasa"
     },
     "theme": {
-      "switchToLight": "Ganti ke mode terang",
-      "switchToDark": "Ganti ke mode gelap"
+      "switchToLight": "Beralih ke mode terang",
+      "switchToDark": "Beralih ke mode gelap"
     },
     "footer": {
-      "rights": "© {year} Raditya Adyatma. Hak cipta dilindungi.",
-      "about": "Tentang",
-      "work": "Karya",
+      "rights": "© {year} Raditya Adyatma. Semua hak dilindungi undang-undang.",
+      "about": "Ihwal",
+      "work": "Bekerja",
       "contact": "Kontak",
       "linkedin": "LinkedIn",
-      "dribbble": "Dribbble",
+      "dribbble": "Menggiring bola",
       "instagram": "Instagram"
     },
     "home": {
-      "profileTitle": "Brand Designer dan Fullstack Developer",
+      "profileTitle": "Tersedia Untuk Disewa",
       "heroHeadline": "MITRA PENGEMBANGAN DIGITAL ANDA",
-      "heroHighlight": "Pengembangan Digital",
-      "heroDescription": "Mitra Pengembangan Brand & Software: menghadirkan pengalaman digital berkualitas tinggi dengan presisi dan performa. Rads Dev hadir untuk organisasi dan bisnis yang membutuhkan solusi profesional dan siap masa depan.",
-      "getInTouch": "Hubungi Saya",
+      "heroHighlight": "Perkembangan Digital",
+      "heroDescription": "Mitra Pengembangan Merek & Perangkat Lunak: Memberikan pengalaman digital berkualitas tinggi dengan presisi dan kinerja. Saya membangun untuk organisasi dan bisnis yang menginginkan solusi profesional dan siap menghadapi masa depan.",
+      "getInTouch": "Hubungi kami",
       "metrics": {
-        "projects": "Proyek Selesai",
+        "projects": "Proyek Disampaikan",
         "disciplines": "Disiplin Terintegrasi",
-        "timeline": "Estimasi MVP"
+        "timeline": "Garis Waktu MVP Khas"
       },
-      "selectedBuilds": "Proyek Produk Pilihan",
+      "selectedBuilds": "Pembuatan Produk Terpilih",
       "trustTypes": [
-        "Brand + Mobile",
+        "Merek + Seluler",
         "Perangkat Lunak Web",
-        "Brand + Website",
-        "Mobile + Backend",
+        "Merek + Situs Web",
+        "Seluler + Backend",
         "Platform LMS",
-        "Produk Internal"
+        "Produk Dalaman"
       ],
       "servicesTitle": "Layanan Multidisiplin",
       "services": [
         {
-          "title": "Sistem Brand",
-          "description": "Arah identitas, bahasa visual, dan aturan desain yang skalabel agar setiap touchpoint produk tetap konsisten.",
+          "title": "Sistem Merek",
+          "description": "Arah identitas, bahasa visual, dan aturan desain yang dapat diskalakan untuk menjaga setiap titik kontak produk tetap konsisten.",
           "items": [
-            "Strategi brand",
+            "Strategi merek",
             "Identitas visual",
-            "Panduan desain"
+            "Pedoman desain"
           ]
         },
         {
           "title": "Pengalaman Web",
-          "description": "Website marketing dan produk yang dibangun untuk performa, konversi, dan fleksibilitas editorial.",
+          "description": "Situs web pemasaran dan produk dibuat untuk kinerja, konversi, dan fleksibilitas editorial.",
           "items": [
-            "Landing page",
-            "Arsitektur CMS",
-            "Optimasi performa"
+            "Halaman arahan",
+            "arsitektur CMS",
+            "Pengoptimalan kinerja"
           ]
         },
         {
-          "title": "Produk Software",
-          "description": "UX produk dan arsitektur frontend untuk dashboard, tools internal, dan platform SaaS.",
+          "title": "Produk Perangkat Lunak",
+          "description": "UX produk dan arsitektur frontend untuk dasbor, alat internal, dan platform SaaS.",
           "items": [
-            "Alur UX",
-            "Design system",
-            "Implementasi frontend"
+            "Aliran UX",
+            "Sistem desain",
+            "Implementasi ujung depan"
           ]
         },
         {
-          "title": "Aplikasi Mobile",
-          "description": "Interface mobile yang natural dengan alur tugas jelas, state lengkap, dan kode yang mudah dirawat.",
+          "title": "Aplikasi Seluler",
+          "description": "Antarmuka seluler native - feeling dengan alur tugas yang jelas, status yang kuat, dan kode yang dapat dipelihara.",
           "items": [
-            "UX iOS/Android",
-            "Pustaka komponen",
+            "iOS/Android UX",
+            "Perpustakaan komponen",
             "Integrasi API"
           ]
         }
       ],
       "featuredLabel": "Studi Kasus Unggulan",
-      "featuredTitle": "Karya portofolio dengan hasil terukur",
-      "viewAll": "Lihat semua",
-      "openCaseStudy": "Buka studi kasus",
+      "featuredTitle": "Portofolio bekerja dengan hasil yang terukur",
+      "viewAll": "Lihat semuanya",
+      "openCaseStudy": "Studi kasus terbuka",
       "processLabel": "Proses",
-      "processTitle": "Cara proyek bergerak dari brief hingga rilis",
+      "processTitle": "Bagaimana proyek berpindah dari singkat ke diluncurkan",
       "process": [
         {
-          "title": "Temukan",
-          "description": "Menyelaraskan tujuan, pengguna, dan batasan melalui discovery produk dan brand yang fokus."
+          "title": "Menemukan",
+          "description": "Menyelaraskan tujuan, pengguna, dan kendala melalui penemuan produk dan merek yang terfokus."
         },
         {
-          "title": "Tentukan",
-          "description": "Menerjemahkan temuan menjadi arah sistem, prioritas, dan target terukur."
+          "title": "Mendefinisikan",
+          "description": "Terjemahkan temuan ke dalam arah sistem, prioritas, dan hasil yang terukur."
         },
         {
           "title": "Desain + Bangun",
-          "description": "Desain dan implementasi berjalan dalam satu loop untuk mengurangi friksi handoff."
+          "description": "Desain dan implementasi terjadi dalam satu putaran untuk mengurangi gesekan handoff."
         },
         {
-          "title": "Rilis + Iterasi",
-          "description": "Rilis cepat, pantau perilaku pengguna, lalu tingkatkan dengan prioritas pasca-rilis yang jelas."
+          "title": "Luncurkan + Ulangi",
+          "description": "Rilis dengan cepat, pantau perilaku, dan tingkatkan dengan prioritas pasca peluncuran yang jelas."
         }
       ],
       "nextProject": "Proyek Berikutnya",
-      "nextTitle": "Butuh partner yang bisa menangani brand, interface, dan pengembangan produk dalam satu alur?",
-      "continueToContact": "Lanjut ke kontak"
+      "nextTitle": "Butuh mitra yang dapat menangani pembuatan merek, antarmuka, dan produk dalam satu aliran?",
+      "continueToContact": "Lanjutkan menghubungi"
     },
     "about": {
-      "badge": "Tentang",
+      "badge": "Ihwal",
       "location": "Asia/Jakarta",
-      "profileName": "Raditya Adyatma (RADS)",
-      "profileRole": "Brand Designer dan Fullstack Developer",
-      "description": "Saya adalah builder multidisiplin yang fokus pada kejelasan brand dan eksekusi produk. Saya membantu tim merilis pengalaman digital yang selaras di website, software, dan mobile dari strategi sampai implementasi.",
+      "profileName": "Raditya Adyatma",
+      "profileRole": "Siswa di Universitas Darussalam Gontor - Pendiri 1% Pembaca",
+      "description": "Saya seorang pembangun multidisiplin yang berfokus pada kejelasan merek dan eksekusi produk. Saya membantu tim menyampaikan pengalaman yang koheren di seluruh situs web, perangkat lunak, dan seluler mulai dari strategi hingga implementasi.",
       "experienceTitle": "Pengalaman Kerja",
       "experience": [
         {
-          "company": "Rads Dev",
-          "role": "Brand Designer dan Fullstack Developer",
-          "type": "Independen",
-          "period": "2022 - Sekarang",
-          "summary": "Mengerjakan sistem brand dan produk digital siap produksi untuk website, software, dan mobile."
+          "company": "1% Pembaca - Klub Buku",
+          "role": "Pendiri",
+          "type": "Masyarakat",
+          "period": "Februari 2026 - Sekarang",
+          "summary": "Sebuah klub buku yang didirikan atas dasar keyakinan bahwa \"pembaca membutuhkan pendengar\", menekankan bahwa membaca bukan hanya aktivitas individu namun merupakan proses dialog dan perspektif bersama."
         },
         {
-          "company": "Kolaborasi Klien",
-          "role": "Pengembang Produk dan Antarmuka",
-          "type": "Berbasis Proyek",
-          "period": "2020 - 2022",
-          "summary": "Berkolaborasi dengan tim untuk merilis antarmuka digital berbasis brand, dari strategi produk hingga implementasi frontend."
+          "company": "Departemen Bimbingan dan Konseling – Kampus PMDG 5",
+          "role": "Konselor Bimbingan",
+          "type": "Penuh Waktu",
+          "period": "Juni 2024 - Februari 2026",
+          "summary": "Konselor Bimbingan di PMDG Kampus 5."
+        },
+        {
+          "company": "Staf Departemen Bimbingan dan Konseling (Magelang, Jawa Tengah)",
+          "role": "Sekretaris",
+          "type": "Penuh Waktu",
+          "period": "Agustus 2023 - Februari 2026",
+          "summary": "Sekretaris Staf Departemen Bimbingan dan Konseling."
+        },
+        {
+          "company": "Klub Bola Voli Blaze (Magelang, Jawa Tengah)",
+          "role": "Pengawas",
+          "type": "Paruh Waktu",
+          "period": "Juli 2023 - Februari 2026",
+          "summary": "Supervisor di Klub Bola Voli Blaze."
+        },
+        {
+          "company": "Darul Qiyam Computer Center (DQCC) – Kampus PMDG 5",
+          "role": "Profesional Pendidikan",
+          "type": "Penuh Waktu",
+          "period": "Juni 2023 - Juni 2024",
+          "summary": "Berfokus pada pendampingan siswa dalam keterampilan komputer dan literasi digital."
+        },
+        {
+          "company": "Organisasi Mahasiswa Pondok Modern (OPPM) (Magelang, Jawa Tengah)",
+          "role": "Manajer",
+          "type": "Penuh Waktu",
+          "period": "Juli 2022 - Juli 2023",
+          "summary": "Manajer di Organisasi Mahasiswa Pondok Modern (OPPM)."
         }
       ],
       "educationTitle": "Pendidikan",
       "education": [
         {
-          "institution": "Universitas Negeri Jakarta",
-          "detail": "Studi informatika dengan fokus software dan pengembangan produk berbasis proyek.",
-          "period": "2019 - 2023"
+          "institution": "Universitas Darussalam Gontor",
+          "detail": "Murid",
+          "period": "2023 - 2027"
+        },
+        {
+          "institution": "Pondok Modern Darussalam Gontor",
+          "detail": "Murid",
+          "period": "2020 - 2023"
         }
       ],
-      "skillsTitle": "Keahlian Teknis",
+      "skillsTitle": "Keterampilan Teknis",
       "skillsGroups": [
         {
-          "name": "Bahasa",
+          "name": "Keterampilan Inti",
           "items": [
-            "JavaScript",
-            "TypeScript",
-            "HTML",
-            "CSS",
-            "SQL"
+            "Strategi Produk",
+            "Desain UI/UX",
+            "Pengembangan tumpukan penuh",
+            "Sistem Merek"
           ]
         },
         {
-          "name": "Framework",
+          "name": "Kerangka & Perpustakaan",
           "items": [
             "Astro",
-            "React",
-            "Next.js",
-            "Tailwind CSS",
-            "Node.js"
+            "Bereaksi",
+            "Berikutnya.js",
+            "CSS penarik"
           ]
         },
         {
-          "name": "Alat",
+          "name": "Bahasa & Alat",
           "items": [
-            "Figma",
-            "GitHub",
-            "VS Code",
-            "Postman",
-            "Supabase"
+            "skrip ketikan",
+            "JavaScript",
+            "SQL",
+            "Gambar",
+            "GitHub"
           ]
         }
       ]
     },
     "work": {
       "badge": "Semua Studi Kasus",
-      "headline": "Proyek portofolio lintas brand, web, software, dan mobile.",
-      "description": "Setiap studi kasus menjelaskan tantangan, pendekatan, deliverables, dan hasil terukur dari eksekusi multidisiplin.",
-      "openCase": "Buka Kasus"
+      "headline": "Proyek portofolio di seluruh merek, web, perangkat lunak, dan seluler.",
+      "description": "Setiap studi kasus menjelaskan tantangan, pendekatan, hasil, dan hasil terukur dari pelaksanaan multidisiplin.",
+      "openCase": "Kasus Terbuka"
     },
     "caseStudy": {
-      "backToWork": "Kembali ke Karya",
+      "backToWork": "Kembali Bekerja",
       "badge": "Studi Kasus",
       "category": "Kategori",
       "industry": "Industri",
-      "timeline": "Durasi",
+      "timeline": "Garis waktu",
       "role": "Peran",
       "challenge": "Tantangan",
-      "approach": "Pendekatan",
-      "deliverables": "Deliverables",
+      "approach": "Mendekati",
+      "deliverables": "Hasil kerja",
       "outcomes": "Hasil",
-      "stack": "Stack",
-      "requestBreakdown": "Minta Breakdown Lengkap",
-      "livePreview": "Lihat Langsung",
+      "stack": "Tumpukan",
+      "requestBreakdown": "Minta Perincian Penuh",
+      "livePreview": "Pratinjau Langsung",
       "previous": "Sebelumnya",
       "next": "Berikutnya",
-      "start": "Awal daftar studi kasus",
-      "end": "Akhir daftar studi kasus"
+      "start": "Mulai dari studi kasus",
+      "end": "Akhir dari studi kasus"
     },
     "contact": {
       "badge": "Kontak",
-      "headline": "Mari bangun produk Anda berikutnya.",
-      "description": "Ceritakan tujuan produk, timeline, dan tantangan saat ini. Saya dapat mendukung strategi, desain, dan implementasi secara end-to-end.",
-      "emailTitle": "Email",
-      "emailDescription": "Terbaik untuk membahas scope dan kebutuhan proyek.",
-      "quickCallTitle": "Panggilan Singkat",
-      "quickCallDescription": "Jadwalkan panggilan singkat untuk menyelaraskan target dan timeline.",
-      "quickCallButton": "Jadwalkan Panggilan",
-      "inquiryTitle": "Form Inquiry Singkat",
-      "inquiryDescription": "Isi form ini dan aplikasi email Anda akan terbuka dengan brief proyek siap kirim.",
-      "instantTitle": "Kanal Instan",
-      "instantDescription": "Butuh komunikasi lebih cepat? Hubungi lewat kanal berikut.",
-      "emailButton": "Email",
-      "whatsappButton": "WhatsApp",
-      "callButton": "Jadwalkan Panggilan",
+      "headline": "Ayo buat produk Anda berikutnya.",
+      "description": "Bagikan sasaran produk, linimasa, dan tantangan Anda saat ini. Saya dapat mendukung strategi, desain, dan implementasi secara menyeluruh.",
+      "emailTitle": "E-mail",
+      "emailDescription": "Terbaik untuk lingkup dan persyaratan proyek.",
+      "quickCallTitle": "Panggilan Cepat",
+      "quickCallDescription": "Pesan panggilan perkenalan singkat untuk menyelaraskan tujuan dan jadwal.",
+      "quickCallButton": "Panggilan Intro Buku",
+      "inquiryTitle": "Formulir Pertanyaan Cepat",
+      "inquiryDescription": "Isi ini dan kami akan membuka aplikasi email Anda dengan ringkasan proyek yang siap dikirim.",
+      "instantTitle": "Saluran instan",
+      "instantDescription": "Lebih suka komunikasi yang lebih cepat? Hubungi saya di sini.",
+      "emailButton": "E-mail",
+      "whatsappButton": "Ada apa",
+      "callButton": "Panggilan Buku",
       "form": {
-        "subjectPrefix": "Inquiry Proyek dari",
+        "subjectPrefix": "Permintaan Proyek dari",
         "name": "Nama",
-        "email": "Email",
+        "email": "E-mail",
         "projectType": "Jenis Proyek",
         "budget": "Anggaran",
-        "timeline": "Timeline",
+        "timeline": "Garis waktu",
         "projectBrief": "Ringkasan Proyek",
-        "placeholderName": "Nama Anda",
-        "placeholderEmail": "anda@email.com",
-        "placeholderProjectType": "Website / Aplikasi / Software",
-        "placeholderBudget": "Rp50jt - Rp150jt",
+        "placeholderName": "Namamu",
+        "placeholderEmail": "kamu@email.com",
+        "placeholderProjectType": "Situs Web / Aplikasi / Perangkat Lunak",
+        "placeholderBudget": "$3rb - $10rb",
         "placeholderTimeline": "4 - 8 minggu",
         "placeholderBrief": "Apa yang ingin Anda bangun, untuk siapa, dan hasil apa yang paling penting?",
-        "send": "Kirim Inquiry",
-        "reset": "Reset",
-        "statusMissing": "Mohon isi Nama, Email, dan Ringkasan Proyek.",
+        "send": "Kirim Pertanyaan",
+        "reset": "Mengatur ulang",
+        "statusMissing": "Silakan isi Nama, Email, dan Ringkasan Proyek.",
         "statusOpening": "Membuka aplikasi email Anda..."
       }
     },
     "notFound": {
       "title": "Halaman tidak ditemukan",
-      "description": "Halaman yang Anda cari tidak tersedia atau sudah dipindahkan.",
-      "backHome": "Kembali ke Beranda",
-      "viewWork": "Lihat Karya"
+      "description": "Halaman yang dicari tidak ada atau sudah dipindahkan.",
+      "backHome": "Kembali ke Rumah",
+      "viewWork": "Lihat Pekerjaan"
     }
   },
   "ar": {
     "nav": {
-      "home": "الرئيسية",
-      "about": "من أنا",
-      "services": "الخدمات",
-      "contact": "تواصل",
-      "language": "اللغة",
+      "home": "بيت",
+      "about": "عن",
+      "services": "خدمات",
+      "contact": "اتصال",
+      "language": "لغة",
       "selectLanguage": "اختر اللغة"
     },
     "theme": {
-      "switchToLight": "التبديل إلى الوضع الفاتح",
-      "switchToDark": "التبديل إلى الوضع الداكن"
+      "switchToLight": "التبديل إلى وضع الضوء",
+      "switchToDark": "التبديل إلى الوضع المظلم"
     },
     "footer": {
-      "rights": "© {year} Raditya Adyatma. جميع الحقوق محفوظة.",
-      "about": "من أنا",
-      "work": "الأعمال",
-      "contact": "التواصل",
-      "linkedin": "لينكدإن",
-      "dribbble": "دريبل",
-      "instagram": "إنستغرام"
+      "rights": "© {year} راديتيا أدياتما. جميع الحقوق محفوظة.",
+      "about": "عن",
+      "work": "عمل",
+      "contact": "اتصال",
+      "linkedin": "ينكدين",
+      "dribbble": "مراوغة",
+      "instagram": "انستغرام"
     },
     "home": {
-      "profileTitle": "مصمم هوية ومطور فل ستاك",
+      "profileTitle": "متاح للتأجير",
       "heroHeadline": "شريكك في التطوير الرقمي",
       "heroHighlight": "التطوير الرقمي",
-      "heroDescription": "شريكك في تطوير الهوية والبرمجيات: نقدم تجارب رقمية عالية الجودة بدقة وأداء. تم بناء Rads Dev للمؤسسات والشركات التي تبحث عن حلول احترافية جاهزة للمستقبل.",
-      "getInTouch": "تواصل معي",
+      "heroDescription": "شريك تطوير العلامة التجارية والبرمجيات: تقديم تجارب رقمية عالية الجودة بدقة وأداء. أقوم بالإنشاء للمؤسسات والشركات التي تطالب بحلول احترافية وجاهزة للمستقبل.",
+      "getInTouch": "تواصل معنا",
       "metrics": {
-        "projects": "المشاريع المنجزة",
-        "disciplines": "التخصصات المتكاملة",
-        "timeline": "المدة المعتادة لـ MVP"
+        "projects": "المشاريع التي تم تسليمها",
+        "disciplines": "التخصصات متكاملة",
+        "timeline": "الجدول الزمني النموذجي لـ MVP"
       },
-      "selectedBuilds": "نماذج منتجات مختارة",
+      "selectedBuilds": "بنيات المنتج المحدد",
       "trustTypes": [
-        "هوية + موبايل",
-        "برمجيات ويب",
-        "هوية + موقع",
-        "موبايل + باك إند",
-        "منصة تعليمية",
-        "منتج داخلي"
+        "العلامة التجارية + الجوال",
+        "برامج الويب",
+        "العلامة التجارية + الموقع",
+        "الجوال + الخلفية",
+        "منصة LMS",
+        "المنتج الداخلي"
       ],
       "servicesTitle": "خدمات متعددة التخصصات",
       "services": [
         {
-          "title": "أنظمة الهوية",
-          "description": "اتجاه الهوية واللغة البصرية وقواعد تصميم قابلة للتوسع لضمان اتساق كل نقاط التواصل.",
+          "title": "أنظمة العلامة التجارية",
+          "description": "اتجاه الهوية واللغة المرئية وقواعد التصميم القابلة للتطوير للحفاظ على اتساق كل نقطة اتصال للمنتج.",
           "items": [
-            "استراتيجية الهوية",
-            "هوية بصرية",
-            "دليل تصميم"
+            "استراتيجية العلامة التجارية",
+            "الهوية البصرية",
+            "إرشادات التصميم"
           ]
         },
         {
           "title": "تجارب الويب",
-          "description": "مواقع تسويقية ومنتجية مبنية للأداء والتحويل ومرونة إدارة المحتوى.",
+          "description": "مواقع التسويق والمنتجات مصممة لتحقيق الأداء والتحويل والمرونة التحريرية.",
           "items": [
-            "صفحات هبوط",
-            "هيكلة CMS",
+            "الصفحات المقصودة",
+            "بنية نظام إدارة المحتوى",
             "تحسين الأداء"
           ]
         },
         {
-          "title": "المنتجات البرمجية",
-          "description": "تجربة مستخدم للمنتج وهندسة واجهات أمامية للوحات التحكم والأدوات الداخلية ومنصات SaaS.",
+          "title": "منتجات البرمجيات",
+          "description": "تجربة المستخدم للمنتج وبنية الواجهة الأمامية للوحات المعلومات والأدوات الداخلية ومنصات SaaS.",
           "items": [
-            "مسارات UX",
-            "أنظمة تصميم",
-            "تنفيذ الواجهة"
+            "تدفقات تجربة المستخدم",
+            "أنظمة التصميم",
+            "تنفيذ الواجهة الأمامية"
           ]
         },
         {
-          "title": "تطبيقات الموبايل",
-          "description": "واجهات موبايل طبيعية مع تدفقات واضحة وحالات قوية وكود قابل للصيانة.",
+          "title": "تطبيقات الجوال",
+          "description": "واجهات متنقلة ذات طابع أصلي مع تدفقات مهمة واضحة وحالات قوية وتعليمات برمجية قابلة للصيانة.",
           "items": [
-            "UX لـ iOS/Android",
-            "مكتبة مكونات",
-            "تكامل API"
+            "آي أو إس/أندرويد يو إكس",
+            "مكتبات المكونات",
+            "تكامل واجهة برمجة التطبيقات"
           ]
         }
       ],
-      "featuredLabel": "دراسات حالة مميزة",
-      "featuredTitle": "أعمال بورتفوليو بنتائج قابلة للقياس",
+      "featuredLabel": "دراسات الحالة المميزة",
+      "featuredTitle": "عمل المحفظة بنتائج قابلة للقياس",
       "viewAll": "عرض الكل",
-      "openCaseStudy": "فتح دراسة الحالة",
-      "processLabel": "العملية",
-      "processTitle": "كيف ينتقل المشروع من الفكرة إلى الإطلاق",
+      "openCaseStudy": "دراسة حالة مفتوحة",
+      "processLabel": "عملية",
+      "processTitle": "كيف تنتقل المشاريع من الإيجاز إلى الإطلاق",
       "process": [
         {
-          "title": "اكتشاف",
-          "description": "مواءمة الأهداف والمستخدمين والقيود عبر اكتشاف مركز للمنتج والهوية."
+          "title": "يكتشف",
+          "description": "قم بمواءمة الأهداف والمستخدمين والقيود من خلال اكتشاف المنتج والعلامة التجارية المركزة."
         },
         {
-          "title": "تحديد",
-          "description": "تحويل النتائج إلى اتجاه نظام وأولويات ومخرجات قابلة للقياس."
+          "title": "يُعرِّف",
+          "description": "ترجمة النتائج إلى اتجاه النظام والأولويات والنتائج القابلة للقياس."
         },
         {
           "title": "تصميم + بناء",
-          "description": "يتم التصميم والتنفيذ في دورة واحدة لتقليل احتكاك التسليم."
+          "description": "يتم التصميم والتنفيذ في حلقة واحدة لتقليل الاحتكاك أثناء عملية التسليم."
         },
         {
-          "title": "إطلاق + تحسين",
-          "description": "إطلاق سريع ومتابعة السلوك وتحسين مستمر وفق أولويات واضحة بعد الإطلاق."
+          "title": "إطلاق + تكرار",
+          "description": "قم بالإصدار بسرعة ومراقبة السلوك والتحسين من خلال أولويات واضحة بعد الإطلاق."
         }
       ],
       "nextProject": "المشروع القادم",
-      "nextTitle": "هل تحتاج شريكًا يجمع بين الهوية والواجهة وبناء المنتج في مسار واحد؟",
-      "continueToContact": "الانتقال إلى التواصل"
+      "nextTitle": "هل تحتاج إلى شريك يمكنه التعامل مع بناء العلامة التجارية والواجهة والمنتج في تدفق واحد؟",
+      "continueToContact": "الاستمرار في الاتصال"
     },
     "about": {
-      "badge": "من أنا",
-      "location": "Asia/Jakarta",
-      "profileName": "Raditya Adyatma (RADS)",
-      "profileRole": "مصمم هوية ومطور فل ستاك",
-      "description": "أنا مطور متعدد التخصصات أركز على وضوح الهوية وتنفيذ المنتج. أساعد الفرق على إطلاق تجارب رقمية متناسقة عبر الويب والبرمجيات والموبايل من الاستراتيجية إلى التنفيذ.",
-      "experienceTitle": "الخبرة العملية",
+      "badge": "عن",
+      "location": "آسيا/جاكرتا",
+      "profileName": "راديتيا أدياتما",
+      "profileRole": "Siswa di Universitas Darussalam Gontor - المؤسس 1% القراء",
+      "description": "أنا منشئ متعدد التخصصات أركز على وضوح العلامة التجارية وتنفيذ المنتج. أساعد الفرق على إرسال تجارب متماسكة عبر مواقع الويب والبرامج والهواتف المحمولة بدءًا من الإستراتيجية وحتى التنفيذ.",
+      "experienceTitle": "خبرة في العمل",
       "experience": [
         {
-          "company": "Rads Dev",
-          "role": "مصمم هوية ومطور فل ستاك",
-          "type": "مستقل",
-          "period": "2022 - حتى الآن",
-          "summary": "تنفيذ أنظمة هوية ومنتجات رقمية جاهزة للإطلاق عبر الويب والبرمجيات وتطبيقات الموبايل."
+          "company": "1% قراء - نادي الكتاب",
+          "role": "مؤسس",
+          "type": "مجتمع",
+          "period": "فبراير 2026 - الحالي",
+          "summary": "نادي كتاب تأسس على الاعتقاد بأن \"القراء بحاجة إلى مستمعين\"، مع التأكيد على أن القراءة ليست مجرد نشاط فردي، بل هي عملية حوار ووجهات نظر مشتركة."
         },
         {
-          "company": "تعاونات العملاء",
-          "role": "مطور منتجات وواجهات",
-          "type": "بنظام المشاريع",
-          "period": "2020 - 2022",
-          "summary": "عملت مع فرق مختلفة لإطلاق واجهات رقمية نظيفة تقودها الهوية، من استراتيجية المنتج حتى تنفيذ الواجهة الأمامية."
+          "company": "قسم التوجيه والإرشاد – PMDG الحرم الجامعي 5",
+          "role": "مستشار التوجيه",
+          "type": "بدوام كامل",
+          "period": "يونيو 2024 - فبراير 2026",
+          "summary": "مستشار التوجيه في الحرم الجامعي PMDG 5."
+        },
+        {
+          "company": "طاقم قسم التوجيه والإرشاد (ماجيلانج، جاوة الوسطى)",
+          "role": "سكرتير",
+          "type": "بدوام كامل",
+          "period": "أغسطس 2023 - فبراير 2026",
+          "summary": "سكرتير بقسم التوجيه والإرشاد."
+        },
+        {
+          "company": "نادي بليز للكرة الطائرة (ماجيلانج، جاوة الوسطى)",
+          "role": "مشرف",
+          "type": "دوام جزئى",
+          "period": "يوليو 2023 - فبراير 2026",
+          "summary": "مشرف في نادي بليز للكرة الطائرة."
+        },
+        {
+          "company": "مركز دار القيام للكمبيوتر (DQCC) – الحرم الجامعي PMDG 5",
+          "role": "التعليم المهني",
+          "type": "بدوام كامل",
+          "period": "يونيو 2023 - يونيو 2024",
+          "summary": "تركز على توجيه الطلاب في مهارات الكمبيوتر ومحو الأمية الرقمية."
+        },
+        {
+          "company": "المنظمة الطلابية لبوندوك الحديثة (OPPM) (ماجيلانج، جاوة الوسطى)",
+          "role": "مدير",
+          "type": "بدوام كامل",
+          "period": "يوليو 2022 - يوليو 2023",
+          "summary": "مدير في منظمة طلاب بوندوك الحديثة (OPPM)."
         }
       ],
-      "educationTitle": "التعليم",
+      "educationTitle": "تعليم",
       "education": [
         {
-          "institution": "Universitas Negeri Jakarta",
-          "detail": "دراسة المعلوماتية مع تركيز على البرمجيات وتطوير المنتجات المعتمد على المشاريع.",
-          "period": "2019 - 2023"
+          "institution": "جامعة دار السلام جونتور",
+          "detail": "طالب",
+          "period": "2023 - 2027"
+        },
+        {
+          "institution": "بوندوك دار السلام الحديثة جونتور",
+          "detail": "طالب",
+          "period": "2020 - 2023"
         }
       ],
-      "skillsTitle": "المهارات التقنية",
+      "skillsTitle": "المهارات الفنية",
       "skillsGroups": [
         {
-          "name": "اللغات",
+          "name": "المهارات الأساسية",
           "items": [
-            "JavaScript",
-            "TypeScript",
-            "HTML",
-            "CSS",
-            "SQL"
+            "استراتيجية المنتج",
+            "تصميم واجهة المستخدم/تجربة المستخدم",
+            "تطوير المكدس الكامل",
+            "أنظمة العلامة التجارية"
           ]
         },
         {
-          "name": "الأطر",
+          "name": "الأطر والمكتبات",
           "items": [
-            "Astro",
-            "React",
+            "استرو",
+            "رد فعل",
             "Next.js",
-            "Tailwind CSS",
-            "Node.js"
+            "الريح الخلفية CSS"
           ]
         },
         {
-          "name": "الأدوات",
+          "name": "اللغات والأدوات",
           "items": [
-            "Figma",
-            "GitHub",
-            "VS Code",
-            "Postman",
-            "Supabase"
+            "تايب سكريبت",
+            "جافا سكريبت",
+            "SQL",
+            "فيجما",
+            "جيثب"
           ]
         }
       ]
     },
     "work": {
-      "badge": "كل دراسات الحالة",
-      "headline": "مشاريع بورتفوليو عبر الهوية والويب والبرمجيات والموبايل.",
-      "description": "كل دراسة حالة تشرح التحدي والمنهجية والمخرجات والنتائج القابلة للقياس من تنفيذ متعدد التخصصات.",
-      "openCase": "فتح الحالة"
+      "badge": "جميع دراسات الحالة",
+      "headline": "مشاريع المحفظة عبر العلامات التجارية والويب والبرامج والهواتف المحمولة.",
+      "description": "تشرح كل دراسة حالة التحدي والنهج والتسليمات والنتائج القابلة للقياس من التنفيذ متعدد التخصصات.",
+      "openCase": "فتح القضية"
     },
     "caseStudy": {
-      "backToWork": "العودة للأعمال",
-      "badge": "دراسة حالة",
-      "category": "التصنيف",
-      "industry": "القطاع",
-      "timeline": "المدة",
-      "role": "الدور",
-      "challenge": "التحدي",
-      "approach": "المنهجية",
-      "deliverables": "المخرجات",
+      "backToWork": "العودة إلى العمل",
+      "badge": "دراسة الحالة",
+      "category": "فئة",
+      "industry": "صناعة",
+      "timeline": "الجدول الزمني",
+      "role": "دور",
+      "challenge": "تحدي",
+      "approach": "يقترب",
+      "deliverables": "التسليمات",
       "outcomes": "النتائج",
-      "stack": "التقنيات",
-      "requestBreakdown": "طلب تحليل مفصل",
-      "livePreview": "معاينة مباشرة",
-      "previous": "السابق",
+      "stack": "كومة",
+      "requestBreakdown": "طلب الانهيار الكامل",
+      "livePreview": "المعاينة المباشرة",
+      "previous": "سابق",
       "next": "التالي",
-      "start": "بداية دراسات الحالة",
+      "start": "البدء بدراسات الحالة",
       "end": "نهاية دراسات الحالة"
     },
     "contact": {
-      "badge": "التواصل",
-      "headline": "لنُنجز منتجك القادم.",
-      "description": "شارك أهداف منتجك والجدول الزمني والتحديات الحالية. يمكنني دعمك من الاستراتيجية إلى التصميم والتنفيذ بالكامل.",
-      "emailTitle": "البريد الإلكتروني",
-      "emailDescription": "الأفضل لمناقشة نطاق المشروع والمتطلبات.",
+      "badge": "اتصال",
+      "headline": "دعونا نبني المنتج الخاص بك المقبل.",
+      "description": "شارك أهداف منتجك والجدول الزمني والتحديات الحالية. يمكنني دعم الإستراتيجية والتصميم والتنفيذ بشكل شامل.",
+      "emailTitle": "بريد إلكتروني",
+      "emailDescription": "الأفضل لنطاق المشروع ومتطلباته.",
       "quickCallTitle": "مكالمة سريعة",
-      "quickCallDescription": "احجز مكالمة تعريفية قصيرة لمواءمة الأهداف والجدول الزمني.",
-      "quickCallButton": "احجز مكالمة",
-      "inquiryTitle": "نموذج استفسار سريع",
-      "inquiryDescription": "املأ النموذج وسيفتح بريدك الإلكتروني برسالة جاهزة بملخص المشروع.",
+      "quickCallDescription": "احجز مكالمة تمهيدية قصيرة للتوافق مع الأهداف والجدول الزمني.",
+      "quickCallButton": "كتاب مقدمة المكالمة",
+      "inquiryTitle": "نموذج الاستفسار السريع",
+      "inquiryDescription": "املأ هذا وسنفتح تطبيق البريد الإلكتروني الخاص بك مع ملخص المشروع الجاهز للإرسال.",
       "instantTitle": "قنوات فورية",
-      "instantDescription": "تفضّل تواصل أسرع؟ يمكنك الوصول لي من هنا.",
+      "instantDescription": "هل تفضل التواصل بشكل أسرع؟ وصلني هنا.",
       "emailButton": "بريد إلكتروني",
       "whatsappButton": "واتساب",
-      "callButton": "احجز مكالمة",
+      "callButton": "احجز المكالمة",
       "form": {
-        "subjectPrefix": "استفسار مشروع من",
-        "name": "الاسم",
-        "email": "البريد الإلكتروني",
+        "subjectPrefix": "الاستعلام عن المشروع من",
+        "name": "اسم",
+        "email": "بريد إلكتروني",
         "projectType": "نوع المشروع",
-        "budget": "الميزانية",
-        "timeline": "المدة الزمنية",
+        "budget": "ميزانية",
+        "timeline": "الجدول الزمني",
         "projectBrief": "ملخص المشروع",
         "placeholderName": "اسمك",
         "placeholderEmail": "you@email.com",
-        "placeholderProjectType": "موقع / تطبيق / نظام",
-        "placeholderBudget": "$3k - $10k",
+        "placeholderProjectType": "الموقع الإلكتروني/التطبيق/البرمجيات",
+        "placeholderBudget": "3 آلاف دولار - 10 آلاف دولار",
         "placeholderTimeline": "4 - 8 أسابيع",
-        "placeholderBrief": "ما الذي تريد بناءه، ولمن، وما النتيجة الأهم؟",
+        "placeholderBrief": "ما الذي تحاول بناءه، ولمن، وما هي النتيجة الأكثر أهمية؟",
         "send": "إرسال الاستفسار",
-        "reset": "إعادة تعيين",
-        "statusMissing": "يرجى إدخال الاسم والبريد وملخص المشروع.",
-        "statusOpening": "جارٍ فتح تطبيق البريد..."
+        "reset": "إعادة ضبط",
+        "statusMissing": "يرجى ملء الاسم والبريد الإلكتروني وملخص المشروع.",
+        "statusOpening": "جارٍ فتح تطبيق البريد الإلكتروني..."
       }
     },
     "notFound": {
-      "title": "الصفحة غير موجودة",
+      "title": "لم يتم العثور على الصفحة",
       "description": "الصفحة التي تبحث عنها غير موجودة أو تم نقلها.",
-      "backHome": "العودة للرئيسية",
-      "viewWork": "عرض الأعمال"
+      "backHome": "العودة إلى المنزل",
+      "viewWork": "عرض العمل"
     }
   }
 };

@@ -3,72 +3,107 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 import { BASE_URL } from "@/utils/paths";
 
 const GITHUB_URL = import.meta.env.PORTFOLIO_GITHUB || "https://github.com/radurbae";
-const INSTAGRAM_URL = import.meta.env.PORTFOLIO_INSTAGRAM || "https://instagram.com";
-const LINKEDIN_URL = import.meta.env.PORTFOLIO_LINKEDIN || "https://linkedin.com";
+const INSTAGRAM_URL = import.meta.env.PORTFOLIO_INSTAGRAM || "https://instagram.com/anotherrads";
+const LINKEDIN_URL = import.meta.env.PORTFOLIO_LINKEDIN || "https://linkedin.com/raditya-adyatma";
 const CONTACT_EMAIL = import.meta.env.PORTFOLIO_EMAIL || "radurbae@gmail.com";
-const avatarPath = import.meta.env.PORTFOLIO_AVATAR || "radsdev-logo.png";
+const avatarPath = import.meta.env.PORTFOLIO_AVATAR || "linkedin-profile.jpg";
 const AVATAR_URL = avatarPath.startsWith("http")
   ? avatarPath
   : `${BASE_URL}${avatarPath.replace(/^\/+/, "")}`;
 
 const EXPERIENCE_ITEMS = [
   {
-    company: "Rads Dev",
-    role: "Brand Designer and Fullstack Developer",
-    type: "Independent",
-    period: "2022 - Present",
+    company: "1% Readers - Book Club",
+    role: "Founder",
+    type: "Community",
+    period: "Feb 2026 - Present",
     summary:
-      "Delivering brand systems and production-ready digital products across website, software, and mobile projects."
+      "A book club founded on the belief that \"readers need listeners,\" emphasizing that reading is not just an individual activity but a process of dialogue and shared perspectives."
   },
   {
-    company: "Client Collaborations",
-    role: "Product and Interface Builder",
-    type: "Project-Based",
-    period: "2020 - 2022",
+    company: "Guidance and Counseling Department – PMDG Campus 5",
+    role: "Guidance Counselor",
+    type: "Full-Time",
+    period: "Jun 2024 - Feb 2026",
     summary:
-      "Worked with teams to ship clean brand-led interfaces, from product strategy to frontend implementation."
+      "Guidance Counselor at PMDG Campus 5."
+  },
+  {
+    company: "Guidance and Counseling Department Staff (Magelang, Central Java)",
+    role: "Secretary",
+    type: "Full-Time",
+    period: "Aug 2023 - Feb 2026",
+    summary:
+      "Secretary at Guidance and Counseling Department Staff."
+  },
+  {
+    company: "Blaze Volleyball Club (Magelang, Central Java)",
+    role: "Supervisor",
+    type: "Part-Time",
+    period: "Jul 2023 - Feb 2026",
+    summary:
+      "Supervisor at Blaze Volleyball Club."
+  },
+  {
+    company: "Darul Qiyam Computer Center (DQCC) – PMDG Campus 5",
+    role: "Education Professional",
+    type: "Full-Time",
+    period: "Jun 2023 - Jun 2024",
+    summary:
+      "Focused on mentoring students in computer skills and digital literacy."
+  },
+  {
+    company: "Student Organization of Pondok Modern (OPPM) (Magelang, Central Java)",
+    role: "Manager",
+    type: "Full-Time",
+    period: "Jul 2022 - Jul 2023",
+    summary:
+      "Manager at Student Organization of Pondok Modern (OPPM)."
   }
 ];
 
 const EDUCATION_ITEMS = [
   {
-    institution: "Universitas Negeri Jakarta",
-    detail: "Informatics and software-focused studies with project-based product development.",
-    period: "2019 - 2023"
+    institution: "Universitas Darussalam Gontor",
+    detail: "Student",
+    period: "2023 - 2027"
+  },
+  {
+    institution: "Pondok Modern Darussalam Gontor",
+    detail: "Student",
+    period: "2020 - 2023"
   }
 ];
 
 const SKILL_GROUPS = [
   {
-    name: "Languages",
-    items: ["JavaScript", "TypeScript", "HTML", "CSS", "SQL"]
+    name: "Core Skills",
+    items: ["Product Strategy", "UI/UX Design", "Fullstack Development", "Brand Systems"]
   },
   {
-    name: "Frameworks",
-    items: ["Astro", "React", "Next.js", "Tailwind CSS", "Node.js"]
+    name: "Frameworks & Libraries",
+    items: ["Astro", "React", "Next.js", "Tailwind CSS"]
   },
   {
-    name: "Tools",
-    items: ["Figma", "GitHub", "VS Code", "Postman", "Supabase"]
+    name: "Languages & Tools",
+    items: ["TypeScript", "JavaScript", "SQL", "Figma", "GitHub"]
   }
 ];
 
 const SKILL_ICON_BY_NAME = {
-  JavaScript: "ti ti-brand-javascript",
-  TypeScript: "ti ti-brand-typescript",
-  HTML: "ti ti-brand-html5",
-  CSS: "ti ti-brand-css3",
-  SQL: "ti ti-database",
+  "Product Strategy": "ti ti-bulb",
+  "UI/UX Design": "ti ti-color-swatch",
+  "Fullstack Development": "ti ti-code",
+  "Brand Systems": "ti ti-layers-intersect",
   Astro: "ti ti-brand-astro",
   React: "ti ti-brand-react",
   "Next.js": "ti ti-brand-nextjs",
   "Tailwind CSS": "ti ti-brand-tailwind",
-  "Node.js": "ti ti-brand-nodejs",
+  TypeScript: "ti ti-brand-typescript",
+  JavaScript: "ti ti-brand-javascript",
+  SQL: "ti ti-database",
   Figma: "ti ti-brand-figma",
-  GitHub: "ti ti-brand-github",
-  "VS Code": "ti ti-brand-vscode",
-  Postman: "ti ti-api",
-  Supabase: "ti ti-brand-supabase"
+  GitHub: "ti ti-brand-github"
 };
 ---
 
@@ -80,10 +115,10 @@ const SKILL_ICON_BY_NAME = {
       </div>
       <p data-i18n="about.location" class="mt-4 text-sm font-medium text-[#4c4c4c]">Asia/Jakarta</p>
       <h1 data-reveal data-i18n="about.profileName" style="--reveal-delay:80ms" class="motion-reveal mx-auto mt-3 max-w-[920px] text-balance text-4xl font-semibold leading-[1.08] md:text-6xl">
-        Raditya Adyatma (RADS)
+        Raditya Adyatma
       </h1>
       <p data-reveal data-i18n="about.profileRole" style="--reveal-delay:120ms" class="motion-reveal mt-3 text-base text-[#4c4c4c] md:text-2xl">
-        Brand Designer and Fullstack Developer
+        Siswa di Universitas Darussalam Gontor - Founder 1% Readers
       </p>
 
       <div data-reveal style="--reveal-delay:160ms" class="motion-reveal mt-5 flex flex-wrap items-center justify-center gap-2">

@@ -3,8 +3,8 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 import InquiryForm from "@/components/InquiryForm.astro";
 
 const CONTACT_EMAIL = import.meta.env.PORTFOLIO_EMAIL || "radurbae@gmail.com";
-const WHATSAPP_URL = import.meta.env.PORTFOLIO_WHATSAPP || "https://wa.me/6281234567890";
-const CALL_URL = import.meta.env.PORTFOLIO_CALL_URL || "https://cal.com";
+const WHATSAPP_URL = import.meta.env.PORTFOLIO_WHATSAPP || "https://wa.me/6285177155097";
+const CALL_URL = import.meta.env.PORTFOLIO_CALL_URL || "https://cal.com/radurbae";
 ---
 
 <BaseLayout title="Contact">
@@ -36,7 +36,7 @@ const CALL_URL = import.meta.env.PORTFOLIO_CALL_URL || "https://cal.com";
 
     <article data-reveal class="motion-reveal motion-card mt-4 rounded-2xl border border-[#d9d7ce] bg-white p-5">
       <h2 data-i18n="contact.inquiryTitle" class="text-xl font-semibold">Quick Inquiry Form</h2>
-      <p data-i18n="contact.inquiryDescription" class="mt-2 text-sm text-[#4c4c4c]">Fill this and we&apos;ll open your email app with a ready-to-send project brief.</p>
+      <p data-i18n="contact.inquiryDescription" class="mt-2 text-sm text-[#4c4c4c]">Fill this and I&apos;ll open your email app with a ready-to-send project brief.</p>
       <div class="mt-4">
         <InquiryForm contactEmail={CONTACT_EMAIL} />
       </div>
