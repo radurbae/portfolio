@@ -185,7 +185,16 @@ export const TRANSLATIONS = {
             "Product Strategy",
             "UI/UX Design",
             "Fullstack Development",
-            "Brand Systems"
+            "API Integration",
+            "Mobile Delivery"
+          ]
+        },
+        {
+          "name": "AI & Machine Learning",
+          "items": [
+            "Machine Learning",
+            "Deep Learning",
+            "TensorFlow"
           ]
         },
         {
@@ -194,6 +203,7 @@ export const TRANSLATIONS = {
             "Astro",
             "React",
             "Next.js",
+            "React Native",
             "Tailwind CSS"
           ]
         },
@@ -458,7 +468,16 @@ export const TRANSLATIONS = {
             "Strategi Produk",
             "Desain UI/UX",
             "Pengembangan tumpukan penuh",
-            "Sistem Merek"
+            "Integrasi API",
+            "Pengiriman Seluler"
+          ]
+        },
+        {
+          "name": "AI & Pembelajaran Mesin",
+          "items": [
+            "Pembelajaran Mesin",
+            "Pembelajaran Mendalam",
+            "Aliran Tensor"
           ]
         },
         {
@@ -467,6 +486,7 @@ export const TRANSLATIONS = {
             "Astro",
             "Bereaksi",
             "Berikutnya.js",
+            "Bereaksi Asli",
             "CSS penarik"
           ]
         },
@@ -731,7 +751,16 @@ export const TRANSLATIONS = {
             "استراتيجية المنتج",
             "تصميم واجهة المستخدم/تجربة المستخدم",
             "تطوير المكدس الكامل",
-            "أنظمة العلامة التجارية"
+            "تكامل واجهة برمجة التطبيقات",
+            "تسليم المحمول"
+          ]
+        },
+        {
+          "name": "الذكاء الاصطناعي والتعلم الآلي",
+          "items": [
+            "التعلم الآلي",
+            "التعلم العميق",
+            "TensorFlow"
           ]
         },
         {
@@ -740,6 +769,7 @@ export const TRANSLATIONS = {
             "استرو",
             "رد فعل",
             "Next.js",
+            "رد الفعل الأصلي",
             "الريح الخلفية CSS"
           ]
         },
