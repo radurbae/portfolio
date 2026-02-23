@@ -116,8 +116,8 @@ export const TRANSLATIONS = {
       "badge": "About",
       "location": "Asia/Jakarta",
       "profileName": "Raditya Adyatma",
-      "profileRole": "Siswa di Universitas Darussalam Gontor - Founder 1% Readers",
-      "description": "I am a multidisciplinary builder combining deep technical expertise with strategic community vision. As the founder of 1% Readers and a student of Islamic Economics Law, I solve complex problems by bridging Fullstack Software Engineering and AI Machine Learning with robust operational logic.",
+      "profileRole": "Founder. Student. Multidisciplinary Developer.",
+      "description": "I design and build digital products with structural clarity — combining fullstack engineering, AI integrations, and strategic thinking from economics & law.",
       "experienceTitle": "Work Experience",
       "experience": [
         {
@@ -419,8 +419,8 @@ export const TRANSLATIONS = {
       "badge": "Ihwal",
       "location": "Asia/Jakarta",
       "profileName": "Raditya Adyatma",
-      "profileRole": "Siswa di Universitas Darussalam Gontor - Pendiri 1% Pembaca",
-      "description": "Saya seorang pembangun multidisiplin yang menggabungkan keahlian teknis mendalam dengan visi komunitas strategis. Sebagai pendiri 1% Readers dan mahasiswa Hukum Ekonomi Islam, saya memecahkan masalah kompleks dengan menjembatani Rekayasa Perangkat Lunak Fullstack dan Pembelajaran Mesin AI dengan logika operasional yang kuat.",
+      "profileRole": "Pendiri. Murid. Pengembang Multidisiplin.",
+      "description": "Saya merancang dan membangun produk digital dengan struktur yang jelas — menggabungkan rekayasa fullstack, integrasi AI, dan pemikiran strategis dari bidang ekonomi & hukum.",
       "experienceTitle": "Pengalaman Kerja",
       "experience": [
         {
@@ -722,8 +722,8 @@ export const TRANSLATIONS = {
       "badge": "عن",
       "location": "آسيا/جاكرتا",
       "profileName": "راديتيا أدياتما",
-      "profileRole": "Siswa di Universitas Darussalam Gontor - المؤسس 1% القراء",
-      "description": "أنا منشئ متعدد التخصصات يجمع بين الخبرة التقنية العميقة والرؤية المجتمعية الإستراتيجية. باعتباري مؤسس 1% Readers وطالب في قانون الاقتصاد الإسلامي، أقوم بحل المشكلات المعقدة من خلال ربط هندسة البرمجيات Fullstack والتعلم الآلي بالذكاء الاصطناعي بمنطق تشغيلي قوي.",
+      "profileRole": "مؤسس. طالب. مطور متعدد التخصصات.",
+      "description": "أقوم بتصميم وإنشاء منتجات رقمية بوضوح هيكلي - تجمع بين الهندسة الكاملة وتكاملات الذكاء الاصطناعي والتفكير الاستراتيجي من الاقتصاد والقانون.",
       "experienceTitle": "خبرة في العمل",
       "experience": [
         {
